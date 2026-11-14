@@ -1,0 +1,7159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    
+        <link href="../../../assets/styles.css" rel="stylesheet">
+    
+        <link href="../../../assets/scripts.css" rel="stylesheet">
+    
+    
+        <script type="module" src="../../../assets/scripts.js"></script>
+    
+    
+    
+    
+    <title>Ziehl-Neelsen (ZN) stain - Chest</title>
+    <script>
+        // Load dark/light theme as soon as possible to avoid color flashes.
+        let theme = localStorage.getItem("theme");
+        if (!theme) {
+            theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light";
+        }
+        document.documentElement.classList.add(`theme-${theme}`);
+
+        window.glob = {
+            isStatic: true,
+            theme
+        };
+
+        (function() {
+            const leftCollapsed = localStorage.getItem("left-pane-collapsed") === "true";
+            const tocCollapsed = localStorage.getItem("toc-pane-collapsed") === "true";
+            if (leftCollapsed) document.documentElement.classList.add("left-pane-collapsed");
+            if (tocCollapsed) document.documentElement.classList.add("toc-pane-collapsed");
+        })();
+    </script>
+    <!-- HTML Meta Tags -->
+    <meta name="description" content="">
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ziehl-Neelsen (ZN) stain - Chest">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="">
+    <meta property="twitter:url" content="">
+    <meta name="twitter:title" content="Ziehl-Neelsen (ZN) stain - Chest">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    <!-- Meta Tags Generated via https://opengraph.dev -->
+    <meta name="theme-color" content="">
+    <style id="trilium-icon-packs">
+                  @font-face {
+                font-family: 'boxicons';
+                font-weight: normal;
+                font-style: normal;
+                src: url('../../../assets/icon-pack-bx.woff2') format('woff2');
+                ascent-override: 93.75%;
+                descent-override: 6.25%;
+                line-gap-override: 0%;
+            }
+
+            .bx {
+                font-family: 'boxicons' !important;
+                font-weight: normal;
+                font-style: normal;
+                font-variant: normal;
+                line-height: 1;
+                text-rendering: auto;
+                display: inline-block;
+                text-transform: none;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            .bx.bx-child::before { content: ""; }
+.bx.bxs-balloon::before { content: ""; }
+.bx.bxs-coffee-bean::before { content: ""; }
+.bx.bxs-pear::before { content: ""; }
+.bx.bxs-sushi::before { content: ""; }
+.bx.bx-sushi::before { content: ""; }
+.bx.bxs-shower::before { content: ""; }
+.bx.bx-shower::before { content: ""; }
+.bx.bxl-typescript::before { content: ""; }
+.bx.bxl-graphql::before { content: ""; }
+.bx.bx-rfid::before { content: ""; }
+.bx.bxs-universal-access::before { content: ""; }
+.bx.bx-universal-access::before { content: ""; }
+.bx.bxs-castle::before { content: ""; }
+.bx.bxs-shield-minus::before { content: ""; }
+.bx.bx-shield-minus::before { content: ""; }
+.bx.bxs-shield-plus::before { content: ""; }
+.bx.bx-shield-plus::before { content: ""; }
+.bx.bx-vertical-bottom::before { content: ""; }
+.bx.bx-vertical-top::before { content: ""; }
+.bx.bx-horizontal-right::before { content: ""; }
+.bx.bx-horizontal-left::before { content: ""; }
+.bx.bxs-objects-vertical-bottom::before { content: ""; }
+.bx.bx-objects-vertical-bottom::before { content: ""; }
+.bx.bxs-objects-vertical-center::before { content: ""; }
+.bx.bx-objects-vertical-center::before { content: ""; }
+.bx.bxs-objects-vertical-top::before { content: ""; }
+.bx.bx-objects-vertical-top::before { content: ""; }
+.bx.bxs-objects-horizontal-right::before { content: ""; }
+.bx.bx-objects-horizontal-right::before { content: ""; }
+.bx.bxs-objects-horizontal-center::before { content: ""; }
+.bx.bx-objects-horizontal-center::before { content: ""; }
+.bx.bxs-objects-horizontal-left::before { content: ""; }
+.bx.bx-objects-horizontal-left::before { content: ""; }
+.bx.bxs-color::before { content: ""; }
+.bx.bx-color::before { content: ""; }
+.bx.bx-reflect-horizontal::before { content: ""; }
+.bx.bx-reflect-vertical::before { content: ""; }
+.bx.bxl-postgresql::before { content: ""; }
+.bx.bxl-mongodb::before { content: ""; }
+.bx.bxl-deezer::before { content: ""; }
+.bx.bxl-xing::before { content: ""; }
+.bx.bx-cart-add::before { content: ""; }
+.bx.bx-cart-download::before { content: ""; }
+.bx.bx-no-signal::before { content: ""; }
+.bx.bx-signal-5::before { content: ""; }
+.bx.bx-signal-4::before { content: ""; }
+.bx.bx-signal-3::before { content: ""; }
+.bx.bx-signal-2::before { content: ""; }
+.bx.bx-signal-1::before { content: ""; }
+.bx.bxs-cheese::before { content: ""; }
+.bx.bx-cheese::before { content: ""; }
+.bx.bxs-hard-hat::before { content: ""; }
+.bx.bx-hard-hat::before { content: ""; }
+.bx.bxs-home-alt-2::before { content: ""; }
+.bx.bx-home-alt-2::before { content: ""; }
+.bx.bxl-meta::before { content: ""; }
+.bx.bxs-lemon::before { content: ""; }
+.bx.bx-lemon::before { content: ""; }
+.bx.bxs-cable-car::before { content: ""; }
+.bx.bx-cable-car::before { content: ""; }
+.bx.bxs-cricket-ball::before { content: ""; }
+.bx.bx-cricket-ball::before { content: ""; }
+.bx.bxs-tree-alt::before { content: ""; }
+.bx.bx-male-female::before { content: ""; }
+.bx.bxs-invader::before { content: ""; }
+.bx.bxs-baguette::before { content: ""; }
+.bx.bx-baguette::before { content: ""; }
+.bx.bx-fork::before { content: ""; }
+.bx.bx-knife::before { content: ""; }
+.bx.bxs-circle-half::before { content: ""; }
+.bx.bx-circle-half::before { content: ""; }
+.bx.bxs-circle-three-quarter::before { content: ""; }
+.bx.bx-circle-three-quarter::before { content: ""; }
+.bx.bxs-circle-quarter::before { content: ""; }
+.bx.bx-circle-quarter::before { content: ""; }
+.bx.bxs-bowl-rice::before { content: ""; }
+.bx.bx-bowl-rice::before { content: ""; }
+.bx.bxs-bowl-hot::before { content: ""; }
+.bx.bx-bowl-hot::before { content: ""; }
+.bx.bxs-popsicle::before { content: ""; }
+.bx.bx-popsicle::before { content: ""; }
+.bx.bx-cross::before { content: ""; }
+.bx.bx-scatter-chart::before { content: ""; }
+.bx.bx-money-withdraw::before { content: ""; }
+.bx.bx-candles::before { content: ""; }
+.bx.bx-math::before { content: ""; }
+.bx.bx-party::before { content: ""; }
+.bx.bx-leaf::before { content: ""; }
+.bx.bx-injection::before { content: ""; }
+.bx.bx-expand-vertical::before { content: ""; }
+.bx.bx-expand-horizontal::before { content: ""; }
+.bx.bx-collapse-vertical::before { content: ""; }
+.bx.bx-collapse-horizontal::before { content: ""; }
+.bx.bx-collapse-alt::before { content: ""; }
+.bx.bxs-party::before { content: ""; }
+.bx.bxs-leaf::before { content: ""; }
+.bx.bxs-injection::before { content: ""; }
+.bx.bxs-dog::before { content: ""; }
+.bx.bxs-cat::before { content: ""; }
+.bx.bxl-upwork::before { content: ""; }
+.bx.bxl-netlify::before { content: ""; }
+.bx.bxl-java::before { content: ""; }
+.bx.bxl-heroku::before { content: ""; }
+.bx.bxl-go-lang::before { content: ""; }
+.bx.bxl-gmail::before { content: ""; }
+.bx.bxl-flask::before { content: ""; }
+.bx.bxl-99designs::before { content: ""; }
+.bx.bxl-venmo::before { content: ""; }
+.bx.bx-qr::before { content: ""; }
+.bx.bx-qr-scan::before { content: ""; }
+.bx.bxl-docker::before { content: ""; }
+.bx.bxl-aws::before { content: ""; }
+.bx.bxs-hand::before { content: ""; }
+.bx.bx-podcast::before { content: ""; }
+.bx.bxs-checkbox-minus::before { content: ""; }
+.bx.bx-checkbox-minus::before { content: ""; }
+.bx.bxs-speaker::before { content: ""; }
+.bx.bx-speaker::before { content: ""; }
+.bx.bxs-registered::before { content: ""; }
+.bx.bx-registered::before { content: ""; }
+.bx.bxs-phone-off::before { content: ""; }
+.bx.bx-phone-off::before { content: ""; }
+.bx.bxl-tiktok::before { content: ""; }
+.bx.bxl-sketch::before { content: ""; }
+.bx.bxl-steam::before { content: ""; }
+.bx.bxl-trip-advisor::before { content: ""; }
+.bx.bxl-visual-studio::before { content: ""; }
+.bx.bxl-unity::before { content: ""; }
+.bx.bxl-php::before { content: ""; }
+.bx.bxl-discord-alt::before { content: ""; }
+.bx.bxl-flutter::before { content: ""; }
+.bx.bxl-mastodon::before { content: ""; }
+.bx.bxl-tailwind-css::before { content: ""; }
+.bx.bx-buildings::before { content: ""; }
+.bx.bxs-buildings::before { content: ""; }
+.bx.bx-store-alt::before { content: ""; }
+.bx.bxs-store-alt::before { content: ""; }
+.bx.bx-bar-chart-alt-2::before { content: ""; }
+.bx.bxs-bar-chart-alt-2::before { content: ""; }
+.bx.bx-message-dots::before { content: ""; }
+.bx.bxs-message-dots::before { content: ""; }
+.bx.bx-message-rounded-dots::before { content: ""; }
+.bx.bxs-message-rounded-dots::before { content: ""; }
+.bx.bxs-devices::before { content: ""; }
+.bx.bx-memory-card::before { content: ""; }
+.bx.bxs-memory-card::before { content: ""; }
+.bx.bx-wallet-alt::before { content: ""; }
+.bx.bxs-wallet-alt::before { content: ""; }
+.bx.bxs-bank::before { content: ""; }
+.bx.bx-slideshow::before { content: ""; }
+.bx.bxs-slideshow::before { content: ""; }
+.bx.bx-message-square::before { content: ""; }
+.bx.bx-message-square-dots::before { content: ""; }
+.bx.bxs-message-square::before { content: ""; }
+.bx.bxs-message-square-dots::before { content: ""; }
+.bx.bx-book-content::before { content: ""; }
+.bx.bxs-book-content::before { content: ""; }
+.bx.bx-chat::before { content: ""; }
+.bx.bxs-chat::before { content: ""; }
+.bx.bx-edit-alt::before { content: ""; }
+.bx.bxs-edit-alt::before { content: ""; }
+.bx.bx-mouse-alt::before { content: ""; }
+.bx.bxs-mouse-alt::before { content: ""; }
+.bx.bx-bug-alt::before { content: ""; }
+.bx.bxs-bug-alt::before { content: ""; }
+.bx.bx-notepad::before { content: ""; }
+.bx.bxs-notepad::before { content: ""; }
+.bx.bx-video-recording::before { content: ""; }
+.bx.bxs-video-recording::before { content: ""; }
+.bx.bx-shape-square::before { content: ""; }
+.bx.bx-shape-triangle::before { content: ""; }
+.bx.bxs-direction-left::before { content: ""; }
+.bx.bx-ghost::before { content: ""; }
+.bx.bxs-ghost::before { content: ""; }
+.bx.bx-mail-send::before { content: ""; }
+.bx.bx-code-alt::before { content: ""; }
+.bx.bx-grid::before { content: ""; }
+.bx.bxs-quote-single-left::before { content: ""; }
+.bx.bxs-quote-single-right::before { content: ""; }
+.bx.bx-user-pin::before { content: ""; }
+.bx.bxs-user-pin::before { content: ""; }
+.bx.bx-run::before { content: ""; }
+.bx.bx-copy-alt::before { content: ""; }
+.bx.bxs-copy-alt::before { content: ""; }
+.bx.bx-transfer-alt::before { content: ""; }
+.bx.bxs-file-doc::before { content: ""; }
+.bx.bxs-file-html::before { content: ""; }
+.bx.bxs-comment-detail::before { content: ""; }
+.bx.bxs-comment-add::before { content: ""; }
+.bx.bxs-file-css::before { content: ""; }
+.bx.bxs-file-js::before { content: ""; }
+.bx.bxs-file-json::before { content: ""; }
+.bx.bxs-file-md::before { content: ""; }
+.bx.bxs-file-txt::before { content: ""; }
+.bx.bxs-file-png::before { content: ""; }
+.bx.bxs-file-jpg::before { content: ""; }
+.bx.bxs-file-gif::before { content: ""; }
+.bx.bxs-analyse::before { content: ""; }
+.bx.bx-book-open::before { content: ""; }
+.bx.bxs-plane-take-off::before { content: ""; }
+.bx.bxs-plane-land::before { content: ""; }
+.bx.bxs-parking::before { content: ""; }
+.bx.bxs-id-card::before { content: ""; }
+.bx.bxs-adjust-alt::before { content: ""; }
+.bx.bx-landscape::before { content: ""; }
+.bx.bxs-landscape::before { content: ""; }
+.bx.bxs-traffic::before { content: ""; }
+.bx.bx-comment::before { content: ""; }
+.bx.bxs-comment::before { content: ""; }
+.bx.bx-comment-dots::before { content: ""; }
+.bx.bxs-comment-dots::before { content: ""; }
+.bx.bxs-wine::before { content: ""; }
+.bx.bx-pyramid::before { content: ""; }
+.bx.bxs-pyramid::before { content: ""; }
+.bx.bx-cylinder::before { content: ""; }
+.bx.bxs-cylinder::before { content: ""; }
+.bx.bxs-graduation::before { content: ""; }
+.bx.bx-lock-alt::before { content: ""; }
+.bx.bxs-lock-alt::before { content: ""; }
+.bx.bx-lock-open-alt::before { content: ""; }
+.bx.bxs-lock-open-alt::before { content: ""; }
+.bx.bxs-hourglass-top::before { content: ""; }
+.bx.bxs-hourglass-bottom::before { content: ""; }
+.bx.bx-left-arrow-alt::before { content: ""; }
+.bx.bx-right-arrow-alt::before { content: ""; }
+.bx.bx-up-arrow-alt::before { content: ""; }
+.bx.bx-down-arrow-alt::before { content: ""; }
+.bx.bx-shape-circle::before { content: ""; }
+.bx.bx-cycling::before { content: ""; }
+.bx.bx-dna::before { content: ""; }
+.bx.bx-bowling-ball::before { content: ""; }
+.bx.bxs-bowling-ball::before { content: ""; }
+.bx.bx-search-alt-2::before { content: ""; }
+.bx.bxs-search-alt-2::before { content: ""; }
+.bx.bx-plus-medical::before { content: ""; }
+.bx.bx-street-view::before { content: ""; }
+.bx.bx-droplet::before { content: ""; }
+.bx.bxs-droplet-half::before { content: ""; }
+.bx.bx-paint-roll::before { content: ""; }
+.bx.bxs-paint-roll::before { content: ""; }
+.bx.bx-shield-alt-2::before { content: ""; }
+.bx.bxs-shield-alt-2::before { content: ""; }
+.bx.bx-error-alt::before { content: ""; }
+.bx.bxs-error-alt::before { content: ""; }
+.bx.bx-square::before { content: ""; }
+.bx.bxs-square::before { content: ""; }
+.bx.bx-square-rounded::before { content: ""; }
+.bx.bxs-square-rounded::before { content: ""; }
+.bx.bx-polygon::before { content: ""; }
+.bx.bxs-polygon::before { content: ""; }
+.bx.bx-cube-alt::before { content: ""; }
+.bx.bxs-cube-alt::before { content: ""; }
+.bx.bx-cuboid::before { content: ""; }
+.bx.bxs-cuboid::before { content: ""; }
+.bx.bx-user-voice::before { content: ""; }
+.bx.bxs-user-voice::before { content: ""; }
+.bx.bx-accessibility::before { content: ""; }
+.bx.bx-building-house::before { content: ""; }
+.bx.bxs-building-house::before { content: ""; }
+.bx.bx-doughnut-chart::before { content: ""; }
+.bx.bxs-doughnut-chart::before { content: ""; }
+.bx.bxs-circle::before { content: ""; }
+.bx.bx-log-in-circle::before { content: ""; }
+.bx.bxs-log-in-circle::before { content: ""; }
+.bx.bx-log-out-circle::before { content: ""; }
+.bx.bxs-log-out-circle::before { content: ""; }
+.bx.bxs-log-in::before { content: ""; }
+.bx.bxs-log-out::before { content: ""; }
+.bx.bxs-notification::before { content: ""; }
+.bx.bxs-notification-off::before { content: ""; }
+.bx.bx-check-square::before { content: ""; }
+.bx.bxs-check-square::before { content: ""; }
+.bx.bx-message-alt::before { content: ""; }
+.bx.bxs-message-alt::before { content: ""; }
+.bx.bx-message-alt-dots::before { content: ""; }
+.bx.bxs-message-alt-dots::before { content: ""; }
+.bx.bx-no-entry::before { content: ""; }
+.bx.bxs-no-entry::before { content: ""; }
+.bx.bxs-traffic-barrier::before { content: ""; }
+.bx.bxs-component::before { content: ""; }
+.bx.bxs-plane-alt::before { content: ""; }
+.bx.bx-palette::before { content: ""; }
+.bx.bxs-palette::before { content: ""; }
+.bx.bx-basket::before { content: ""; }
+.bx.bxs-basket::before { content: ""; }
+.bx.bx-purchase-tag-alt::before { content: ""; }
+.bx.bxs-purchase-tag-alt::before { content: ""; }
+.bx.bx-receipt::before { content: ""; }
+.bx.bxs-receipt::before { content: ""; }
+.bx.bx-line-chart::before { content: ""; }
+.bx.bx-map-pin::before { content: ""; }
+.bx.bxs-map-pin::before { content: ""; }
+.bx.bx-hive::before { content: ""; }
+.bx.bx-band-aid::before { content: ""; }
+.bx.bxs-band-aid::before { content: ""; }
+.bx.bx-credit-card-alt::before { content: ""; }
+.bx.bxs-credit-card-alt::before { content: ""; }
+.bx.bxs-credit-card::before { content: ""; }
+.bx.bx-wifi-off::before { content: ""; }
+.bx.bxs-paint::before { content: ""; }
+.bx.bx-brightness-half::before { content: ""; }
+.bx.bxs-brightness-half::before { content: ""; }
+.bx.bx-brightness::before { content: ""; }
+.bx.bxs-brightness::before { content: ""; }
+.bx.bx-filter-alt::before { content: ""; }
+.bx.bx-dialpad-alt::before { content: ""; }
+.bx.bx-border-right::before { content: ""; }
+.bx.bx-border-left::before { content: ""; }
+.bx.bx-border-top::before { content: ""; }
+.bx.bx-border-bottom::before { content: ""; }
+.bx.bx-border-all::before { content: ""; }
+.bx.bx-mobile-landscape::before { content: ""; }
+.bx.bx-mobile-vibration::before { content: ""; }
+.bx.bxs-rectangle::before { content: ""; }
+.bx.bxs-right-arrow::before { content: ""; }
+.bx.bxs-left-arrow::before { content: ""; }
+.bx.bxs-up-arrow::before { content: ""; }
+.bx.bxs-down-arrow::before { content: ""; }
+.bx.bxs-right-top-arrow-circle::before { content: ""; }
+.bx.bxs-right-down-arrow-circle::before { content: ""; }
+.bx.bxs-left-top-arrow-circle::before { content: ""; }
+.bx.bxs-left-down-arrow-circle::before { content: ""; }
+.bx.bxs-institution::before { content: ""; }
+.bx.bxs-school::before { content: ""; }
+.bx.bxs-chalkboard::before { content: ""; }
+.bx.bxs-skip-previous-circle::before { content: ""; }
+.bx.bxs-skip-next-circle::before { content: ""; }
+.bx.bxs-data::before { content: ""; }
+.bx.bxs-mobile::before { content: ""; }
+.bx.bxs-folder-minus::before { content: ""; }
+.bx.bxs-bell-plus::before { content: ""; }
+.bx.bxs-bell-minus::before { content: ""; }
+.bx.bxs-search::before { content: ""; }
+.bx.bxs-zoom-in::before { content: ""; }
+.bx.bxs-zoom-out::before { content: ""; }
+.bx.bxs-grid::before { content: ""; }
+.bx.bxs-user-x::before { content: ""; }
+.bx.bxs-user-check::before { content: ""; }
+.bx.bxs-compass::before { content: ""; }
+.bx.bx-gas-pump::before { content: ""; }
+.bx.bxs-stopwatch::before { content: ""; }
+.bx.bxs-timer::before { content: ""; }
+.bx.bxs-time::before { content: ""; }
+.bx.bx-pie-chart-alt-2::before { content: ""; }
+.bx.bxs-pie-chart-alt-2::before { content: ""; }
+.bx.bx-time-five::before { content: ""; }
+.bx.bxs-time-five::before { content: ""; }
+.bx.bxl-instagram-alt::before { content: ""; }
+.bx.bxs-bookmarks::before { content: ""; }
+.bx.bxs-bookmark-minus::before { content: ""; }
+.bx.bx-briefcase-alt-2::before { content: ""; }
+.bx.bxs-briefcase-alt-2::before { content: ""; }
+.bx.bx-brush-alt::before { content: ""; }
+.bx.bxs-calendar::before { content: ""; }
+.bx.bxs-calendar-alt::before { content: ""; }
+.bx.bxs-calendar-plus::before { content: ""; }
+.bx.bxs-calendar-minus::before { content: ""; }
+.bx.bxs-calendar-x::before { content: ""; }
+.bx.bxs-calendar-check::before { content: ""; }
+.bx.bxs-calendar-event::before { content: ""; }
+.bx.bx-customize::before { content: ""; }
+.bx.bxs-customize::before { content: ""; }
+.bx.bxs-carousel::before { content: ""; }
+.bx.bxs-rewind-circle::before { content: ""; }
+.bx.bxs-fast-forward-circle::before { content: ""; }
+.bx.bxs-mobile-vibration::before { content: ""; }
+.bx.bxs-quote-alt-left::before { content: ""; }
+.bx.bxs-quote-alt-right::before { content: ""; }
+.bx.bxs-layout::before { content: ""; }
+.bx.bx-radio::before { content: ""; }
+.bx.bx-printer::before { content: ""; }
+.bx.bx-sort-a-z::before { content: ""; }
+.bx.bx-sort-z-a::before { content: ""; }
+.bx.bx-conversation::before { content: ""; }
+.bx.bxs-brush-alt::before { content: ""; }
+.bx.bx-exit::before { content: ""; }
+.bx.bxs-exit::before { content: ""; }
+.bx.bx-extension::before { content: ""; }
+.bx.bxs-extension::before { content: ""; }
+.bx.bxs-file-find::before { content: ""; }
+.bx.bx-face::before { content: ""; }
+.bx.bxs-face::before { content: ""; }
+.bx.bx-file-find::before { content: ""; }
+.bx.bx-label::before { content: ""; }
+.bx.bxs-label::before { content: ""; }
+.bx.bx-check-shield::before { content: ""; }
+.bx.bxs-check-shield::before { content: ""; }
+.bx.bx-border-radius::before { content: ""; }
+.bx.bx-add-to-queue::before { content: ""; }
+.bx.bxs-add-to-queue::before { content: ""; }
+.bx.bx-archive-in::before { content: ""; }
+.bx.bxs-archive-in::before { content: ""; }
+.bx.bx-archive-out::before { content: ""; }
+.bx.bxs-archive-out::before { content: ""; }
+.bx.bx-alarm-add::before { content: ""; }
+.bx.bxs-alarm-add::before { content: ""; }
+.bx.bx-space-bar::before { content: ""; }
+.bx.bx-image-alt::before { content: ""; }
+.bx.bx-image-add::before { content: ""; }
+.bx.bxs-image-add::before { content: ""; }
+.bx.bx-fridge::before { content: ""; }
+.bx.bxs-fridge::before { content: ""; }
+.bx.bx-dish::before { content: ""; }
+.bx.bxs-dish::before { content: ""; }
+.bx.bx-spa::before { content: ""; }
+.bx.bxs-spa::before { content: ""; }
+.bx.bx-cake::before { content: ""; }
+.bx.bxs-cake::before { content: ""; }
+.bx.bxs-city::before { content: ""; }
+.bx.bx-bolt-circle::before { content: ""; }
+.bx.bxs-bolt-circle::before { content: ""; }
+.bx.bx-tone::before { content: ""; }
+.bx.bx-bitcoin::before { content: ""; }
+.bx.bx-lira::before { content: ""; }
+.bx.bx-ruble::before { content: ""; }
+.bx.bxs-caret-up-circle::before { content: ""; }
+.bx.bxs-caret-down-circle::before { content: ""; }
+.bx.bxs-caret-left-circle::before { content: ""; }
+.bx.bxs-caret-right-circle::before { content: ""; }
+.bx.bx-rupee::before { content: ""; }
+.bx.bx-euro::before { content: ""; }
+.bx.bx-pound::before { content: ""; }
+.bx.bx-won::before { content: ""; }
+.bx.bx-yen::before { content: ""; }
+.bx.bx-shekel::before { content: ""; }
+.bx.bxl-facebook-circle::before { content: ""; }
+.bx.bxl-jquery::before { content: ""; }
+.bx.bxl-imdb::before { content: ""; }
+.bx.bxl-pinterest-alt::before { content: ""; }
+.bx.bxs-tone::before { content: ""; }
+.bx.bx-health::before { content: ""; }
+.bx.bxs-baby-carriage::before { content: ""; }
+.bx.bx-clinic::before { content: ""; }
+.bx.bxs-hand-up::before { content: ""; }
+.bx.bxs-hand-right::before { content: ""; }
+.bx.bxs-hand-down::before { content: ""; }
+.bx.bxs-hand-left::before { content: ""; }
+.bx.bx-male::before { content: ""; }
+.bx.bx-female::before { content: ""; }
+.bx.bx-male-sign::before { content: ""; }
+.bx.bx-female-sign::before { content: ""; }
+.bx.bxs-clinic::before { content: ""; }
+.bx.bxs-offer::before { content: ""; }
+.bx.bx-food-tag::before { content: ""; }
+.bx.bx-food-menu::before { content: ""; }
+.bx.bxs-food-menu::before { content: ""; }
+.bx.bxs-camera-plus::before { content: ""; }
+.bx.bxs-business::before { content: ""; }
+.bx.bx-meh-alt::before { content: ""; }
+.bx.bx-wink-tongue::before { content: ""; }
+.bx.bx-happy-alt::before { content: ""; }
+.bx.bx-cool::before { content: ""; }
+.bx.bx-tired::before { content: ""; }
+.bx.bx-smile::before { content: ""; }
+.bx.bx-angry::before { content: ""; }
+.bx.bx-happy-heart-eyes::before { content: ""; }
+.bx.bx-dizzy::before { content: ""; }
+.bx.bx-wink-smile::before { content: ""; }
+.bx.bx-confused::before { content: ""; }
+.bx.bx-sleepy::before { content: ""; }
+.bx.bx-shocked::before { content: ""; }
+.bx.bx-happy-beaming::before { content: ""; }
+.bx.bx-meh-blank::before { content: ""; }
+.bx.bx-laugh::before { content: ""; }
+.bx.bx-upside-down::before { content: ""; }
+.bx.bxs-angry::before { content: ""; }
+.bx.bxs-happy-heart-eyes::before { content: ""; }
+.bx.bxs-dizzy::before { content: ""; }
+.bx.bxs-wink-smile::before { content: ""; }
+.bx.bxs-smile::before { content: ""; }
+.bx.bxs-meh::before { content: ""; }
+.bx.bxs-meh-alt::before { content: ""; }
+.bx.bxs-confused::before { content: ""; }
+.bx.bxs-sleepy::before { content: ""; }
+.bx.bxs-sad::before { content: ""; }
+.bx.bxs-happy::before { content: ""; }
+.bx.bxs-shocked::before { content: ""; }
+.bx.bxs-happy-beaming::before { content: ""; }
+.bx.bxs-tired::before { content: ""; }
+.bx.bxs-cool::before { content: ""; }
+.bx.bxs-meh-blank::before { content: ""; }
+.bx.bxs-laugh::before { content: ""; }
+.bx.bxs-happy-alt::before { content: ""; }
+.bx.bxs-upside-down::before { content: ""; }
+.bx.bxs-wink-tongue::before { content: ""; }
+.bx.bxl-adobe::before { content: ""; }
+.bx.bxl-algolia::before { content: ""; }
+.bx.bxl-audible::before { content: ""; }
+.bx.bxl-figma::before { content: ""; }
+.bx.bxl-etsy::before { content: ""; }
+.bx.bxl-gitlab::before { content: ""; }
+.bx.bxl-patreon::before { content: ""; }
+.bx.bxl-redbubble::before { content: ""; }
+.bx.bx-diamond::before { content: ""; }
+.bx.bxs-comment-error::before { content: ""; }
+.bx.bxs-vial::before { content: ""; }
+.bx.bx-align-left::before { content: ""; }
+.bx.bx-align-middle::before { content: ""; }
+.bx.bx-align-right::before { content: ""; }
+.bx.bx-arrow-back::before { content: ""; }
+.bx.bx-bell-minus::before { content: ""; }
+.bx.bx-bell-off::before { content: ""; }
+.bx.bx-bell-plus::before { content: ""; }
+.bx.bx-bell::before { content: ""; }
+.bx.bx-bookmark::before { content: ""; }
+.bx.bx-bookmarks::before { content: ""; }
+.bx.bx-bullseye::before { content: ""; }
+.bx.bx-camera-off::before { content: ""; }
+.bx.bx-camera::before { content: ""; }
+.bx.bx-captions::before { content: ""; }
+.bx.bx-checkbox-checked::before { content: ""; }
+.bx.bx-checkbox::before { content: ""; }
+.bx.bx-checkbox-square::before { content: ""; }
+.bx.bx-chevron-down::before { content: ""; }
+.bx.bx-chevron-up::before { content: ""; }
+.bx.bx-chevron-left::before { content: ""; }
+.bx.bx-chevron-right::before { content: ""; }
+.bx.bx-chevrons-down::before { content: ""; }
+.bx.bx-chevrons-up::before { content: ""; }
+.bx.bx-chevrons-right::before { content: ""; }
+.bx.bx-chevrons-left::before { content: ""; }
+.bx.bx-clipboard::before { content: ""; }
+.bx.bx-code-curly::before { content: ""; }
+.bx.bx-code::before { content: ""; }
+.bx.bx-coffee::before { content: ""; }
+.bx.bx-copy::before { content: ""; }
+.bx.bx-copyright::before { content: ""; }
+.bx.bx-down-arrow-circle::before { content: ""; }
+.bx.bx-error-circle::before { content: ""; }
+.bx.bx-error::before { content: ""; }
+.bx.bx-exit-fullscreen::before { content: ""; }
+.bx.bx-fast-forward-circle::before { content: ""; }
+.bx.bx-fast-forward::before { content: ""; }
+.bx.bx-first-page::before { content: ""; }
+.bx.bx-folder-minus::before { content: ""; }
+.bx.bx-folder-plus::before { content: ""; }
+.bx.bx-folder::before { content: ""; }
+.bx.bx-fullscreen::before { content: ""; }
+.bx.bx-hide::before { content: ""; }
+.bx.bx-image::before { content: ""; }
+.bx.bx-info-circle::before { content: ""; }
+.bx.bx-align-justify::before { content: ""; }
+.bx.bx-key::before { content: ""; }
+.bx.bx-last-page::before { content: ""; }
+.bx.bx-left-arrow-circle::before { content: ""; }
+.bx.bx-left-down-arrow-circle::before { content: ""; }
+.bx.bx-left-indent::before { content: ""; }
+.bx.bx-left-top-arrow-circle::before { content: ""; }
+.bx.bx-menu::before { content: ""; }
+.bx.bx-microphone::before { content: ""; }
+.bx.bx-minus-circle::before { content: ""; }
+.bx.bx-moon::before { content: ""; }
+.bx.bx-pause-circle::before { content: ""; }
+.bx.bx-pause::before { content: ""; }
+.bx.bx-play-circle::before { content: ""; }
+.bx.bx-play::before { content: ""; }
+.bx.bx-plus-circle::before { content: ""; }
+.bx.bx-question-mark::before { content: ""; }
+.bx.bx-radio-circle-marked::before { content: ""; }
+.bx.bx-radio-circle::before { content: ""; }
+.bx.bx-rectangle::before { content: ""; }
+.bx.bx-rewind::before { content: ""; }
+.bx.bx-reset::before { content: ""; }
+.bx.bx-right-arrow-circle::before { content: ""; }
+.bx.bx-right-down-arrow-circle::before { content: ""; }
+.bx.bx-right-indent::before { content: ""; }
+.bx.bx-right-top-arrow-circle::before { content: ""; }
+.bx.bx-rss::before { content: ""; }
+.bx.bx-search::before { content: ""; }
+.bx.bx-show::before { content: ""; }
+.bx.bx-skip-next::before { content: ""; }
+.bx.bx-skip-previous::before { content: ""; }
+.bx.bx-stop-circle::before { content: ""; }
+.bx.bx-stop::before { content: ""; }
+.bx.bx-stopwatch::before { content: ""; }
+.bx.bx-sync::before { content: ""; }
+.bx.bx-time::before { content: ""; }
+.bx.bx-toggle-left::before { content: ""; }
+.bx.bx-toggle-right::before { content: ""; }
+.bx.bx-trending-down::before { content: ""; }
+.bx.bx-trending-up::before { content: ""; }
+.bx.bx-up-arrow-circle::before { content: ""; }
+.bx.bx-vertical-center::before { content: ""; }
+.bx.bx-video::before { content: ""; }
+.bx.bx-volume-full::before { content: ""; }
+.bx.bx-volume-low::before { content: ""; }
+.bx.bx-volume-mute::before { content: ""; }
+.bx.bx-volume::before { content: ""; }
+.bx.bx-x-circle::before { content: ""; }
+.bx.bx-zoom-in::before { content: ""; }
+.bx.bx-zoom-out::before { content: ""; }
+.bx.bx-archive::before { content: ""; }
+.bx.bx-at::before { content: ""; }
+.bx.bx-bar-chart-alt::before { content: ""; }
+.bx.bx-bar-chart-square::before { content: ""; }
+.bx.bx-bar-chart::before { content: ""; }
+.bx.bx-basketball::before { content: ""; }
+.bx.bx-block::before { content: ""; }
+.bx.bx-book-bookmark::before { content: ""; }
+.bx.bx-book::before { content: ""; }
+.bx.bx-bookmark-minus::before { content: ""; }
+.bx.bx-bookmark-plus::before { content: ""; }
+.bx.bx-briefcase::before { content: ""; }
+.bx.bx-broadcast::before { content: ""; }
+.bx.bx-building::before { content: ""; }
+.bx.bx-bug::before { content: ""; }
+.bx.bx-bluetooth::before { content: ""; }
+.bx.bx-bulb::before { content: ""; }
+.bx.bx-buoy::before { content: ""; }
+.bx.bx-calendar-plus::before { content: ""; }
+.bx.bx-calendar-check::before { content: ""; }
+.bx.bx-calendar-minus::before { content: ""; }
+.bx.bx-calendar-x::before { content: ""; }
+.bx.bx-calendar::before { content: ""; }
+.bx.bx-chart::before { content: ""; }
+.bx.bx-cloud-download::before { content: ""; }
+.bx.bx-cloud-upload::before { content: ""; }
+.bx.bx-cloud::before { content: ""; }
+.bx.bx-terminal::before { content: ""; }
+.bx.bx-crosshair::before { content: ""; }
+.bx.bx-compass::before { content: ""; }
+.bx.bx-data::before { content: ""; }
+.bx.bx-desktop::before { content: ""; }
+.bx.bx-directions::before { content: ""; }
+.bx.bx-dollar::before { content: ""; }
+.bx.bx-dots-horizontal-rounded::before { content: ""; }
+.bx.bx-dots-horizontal::before { content: ""; }
+.bx.bx-dots-vertical-rounded::before { content: ""; }
+.bx.bx-dots-vertical::before { content: ""; }
+.bx.bx-download::before { content: ""; }
+.bx.bx-envelope::before { content: ""; }
+.bx.bx-gift::before { content: ""; }
+.bx.bx-globe::before { content: ""; }
+.bx.bx-devices::before { content: ""; }
+.bx.bx-headphone::before { content: ""; }
+.bx.bx-heart::before { content: ""; }
+.bx.bx-home::before { content: ""; }
+.bx.bx-laptop::before { content: ""; }
+.bx.bx-layer::before { content: ""; }
+.bx.bx-link-alt::before { content: ""; }
+.bx.bx-link::before { content: ""; }
+.bx.bx-list-plus::before { content: ""; }
+.bx.bx-list-ul::before { content: ""; }
+.bx.bx-list-minus::before { content: ""; }
+.bx.bx-lock-open::before { content: ""; }
+.bx.bx-lock::before { content: ""; }
+.bx.bx-map-alt::before { content: ""; }
+.bx.bx-map::before { content: ""; }
+.bx.bx-message-rounded::before { content: ""; }
+.bx.bx-message::before { content: ""; }
+.bx.bx-mobile-alt::before { content: ""; }
+.bx.bx-mobile::before { content: ""; }
+.bx.bx-navigation::before { content: ""; }
+.bx.bx-phone::before { content: ""; }
+.bx.bx-pie-chart::before { content: ""; }
+.bx.bx-send::before { content: ""; }
+.bx.bx-sidebar::before { content: ""; }
+.bx.bx-sitemap::before { content: ""; }
+.bx.bx-spreadsheet::before { content: ""; }
+.bx.bx-tab::before { content: ""; }
+.bx.bx-tag::before { content: ""; }
+.bx.bx-target-lock::before { content: ""; }
+.bx.bx-tennis-ball::before { content: ""; }
+.bx.bx-alarm::before { content: ""; }
+.bx.bx-upload::before { content: ""; }
+.bx.bx-usb::before { content: ""; }
+.bx.bx-video-off::before { content: ""; }
+.bx.bx-voicemail::before { content: ""; }
+.bx.bx-wifi::before { content: ""; }
+.bx.bx-window-open::before { content: ""; }
+.bx.bx-window::before { content: ""; }
+.bx.bx-windows::before { content: ""; }
+.bx.bx-duplicate::before { content: ""; }
+.bx.bx-table::before { content: ""; }
+.bx.bx-x::before { content: ""; }
+.bx.bx-adjust::before { content: ""; }
+.bx.bx-album::before { content: ""; }
+.bx.bx-anchor::before { content: ""; }
+.bx.bx-award::before { content: ""; }
+.bx.bx-bold::before { content: ""; }
+.bx.bx-calculator::before { content: ""; }
+.bx.bx-cart::before { content: ""; }
+.bx.bx-check::before { content: ""; }
+.bx.bx-cloud-drizzle::before { content: ""; }
+.bx.bx-cloud-light-rain::before { content: ""; }
+.bx.bx-cloud-lightning::before { content: ""; }
+.bx.bx-cloud-rain::before { content: ""; }
+.bx.bx-cloud-snow::before { content: ""; }
+.bx.bx-cog::before { content: ""; }
+.bx.bx-columns::before { content: ""; }
+.bx.bx-credit-card::before { content: ""; }
+.bx.bx-crop::before { content: ""; }
+.bx.bx-cube::before { content: ""; }
+.bx.bx-cut::before { content: ""; }
+.bx.bx-detail::before { content: ""; }
+.bx.bx-shield-quarter::before { content: ""; }
+.bx.bx-edit::before { content: ""; }
+.bx.bx-file::before { content: ""; }
+.bx.bx-filter::before { content: ""; }
+.bx.bx-font::before { content: ""; }
+.bx.bx-git-branch::before { content: ""; }
+.bx.bx-git-commit::before { content: ""; }
+.bx.bx-git-compare::before { content: ""; }
+.bx.bx-git-merge::before { content: ""; }
+.bx.bx-git-pull-request::before { content: ""; }
+.bx.bx-git-repo-forked::before { content: ""; }
+.bx.bx-group::before { content: ""; }
+.bx.bx-hash::before { content: ""; }
+.bx.bx-heading::before { content: ""; }
+.bx.bx-home-alt::before { content: ""; }
+.bx.bx-italic::before { content: ""; }
+.bx.bx-joystick::before { content: ""; }
+.bx.bx-link-external::before { content: ""; }
+.bx.bx-log-in::before { content: ""; }
+.bx.bx-log-out::before { content: ""; }
+.bx.bx-microphone-off::before { content: ""; }
+.bx.bx-minus::before { content: ""; }
+.bx.bx-mouse::before { content: ""; }
+.bx.bx-move::before { content: ""; }
+.bx.bx-music::before { content: ""; }
+.bx.bx-notification::before { content: ""; }
+.bx.bx-package::before { content: ""; }
+.bx.bx-paragraph::before { content: ""; }
+.bx.bx-paste::before { content: ""; }
+.bx.bx-pencil::before { content: ""; }
+.bx.bx-pin::before { content: ""; }
+.bx.bx-plus::before { content: ""; }
+.bx.bx-power-off::before { content: ""; }
+.bx.bx-pulse::before { content: ""; }
+.bx.bx-save::before { content: ""; }
+.bx.bx-screenshot::before { content: ""; }
+.bx.bx-select-multiple::before { content: ""; }
+.bx.bx-share-alt::before { content: ""; }
+.bx.bx-share::before { content: ""; }
+.bx.bx-shield-alt::before { content: ""; }
+.bx.bx-shield::before { content: ""; }
+.bx.bx-shopping-bag::before { content: ""; }
+.bx.bx-shuffle::before { content: ""; }
+.bx.bx-sort::before { content: ""; }
+.bx.bx-star::before { content: ""; }
+.bx.bx-sun::before { content: ""; }
+.bx.bx-text::before { content: ""; }
+.bx.bx-trash::before { content: ""; }
+.bx.bx-trophy::before { content: ""; }
+.bx.bx-underline::before { content: ""; }
+.bx.bx-user-check::before { content: ""; }
+.bx.bx-user-circle::before { content: ""; }
+.bx.bx-user-minus::before { content: ""; }
+.bx.bx-user-plus::before { content: ""; }
+.bx.bx-user-x::before { content: ""; }
+.bx.bx-user::before { content: ""; }
+.bx.bx-barcode::before { content: ""; }
+.bx.bx-crown::before { content: ""; }
+.bx.bx-dislike::before { content: ""; }
+.bx.bx-down-arrow::before { content: ""; }
+.bx.bx-export::before { content: ""; }
+.bx.bxl-facebook::before { content: ""; }
+.bx.bx-first-aid::before { content: ""; }
+.bx.bx-flag::before { content: ""; }
+.bx.bxl-github::before { content: ""; }
+.bx.bxl-google::before { content: ""; }
+.bx.bx-history::before { content: ""; }
+.bx.bxl-instagram::before { content: ""; }
+.bx.bx-joystick-alt::before { content: ""; }
+.bx.bx-left-arrow::before { content: ""; }
+.bx.bx-like::before { content: ""; }
+.bx.bx-list-check::before { content: ""; }
+.bx.bx-poll::before { content: ""; }
+.bx.bx-radar::before { content: ""; }
+.bx.bx-redo::before { content: ""; }
+.bx.bx-reply-all::before { content: ""; }
+.bx.bx-reply::before { content: ""; }
+.bx.bx-repost::before { content: ""; }
+.bx.bx-revision::before { content: ""; }
+.bx.bx-right-arrow::before { content: ""; }
+.bx.bx-subdirectory-left::before { content: ""; }
+.bx.bx-subdirectory-right::before { content: ""; }
+.bx.bx-support::before { content: ""; }
+.bx.bx-timer::before { content: ""; }
+.bx.bxl-twitter::before { content: ""; }
+.bx.bx-undo::before { content: ""; }
+.bx.bx-up-arrow::before { content: ""; }
+.bx.bxl-youtube::before { content: ""; }
+.bx.bxl-whatsapp::before { content: ""; }
+.bx.bxl-tumblr::before { content: ""; }
+.bx.bx-phone-call::before { content: ""; }
+.bx.bxl-behance::before { content: ""; }
+.bx.bxl-dribbble::before { content: ""; }
+.bx.bx-aperture::before { content: ""; }
+.bx.bx-film::before { content: ""; }
+.bx.bx-folder-open::before { content: ""; }
+.bx.bx-task::before { content: ""; }
+.bx.bx-server::before { content: ""; }
+.bx.bx-battery::before { content: ""; }
+.bx.bx-calendar-alt::before { content: ""; }
+.bx.bx-import::before { content: ""; }
+.bx.bx-ruler::before { content: ""; }
+.bx.bx-horizontal-center::before { content: ""; }
+.bx.bx-rotate-right::before { content: ""; }
+.bx.bx-rename::before { content: ""; }
+.bx.bx-collapse::before { content: ""; }
+.bx.bx-phone-incoming::before { content: ""; }
+.bx.bx-phone-outgoing::before { content: ""; }
+.bx.bx-body::before { content: ""; }
+.bx.bx-cast::before { content: ""; }
+.bx.bx-chip::before { content: ""; }
+.bx.bx-skip-next-circle::before { content: ""; }
+.bx.bx-skip-previous-circle::before { content: ""; }
+.bx.bx-hdd::before { content: ""; }
+.bx.bx-store::before { content: ""; }
+.bx.bx-globe-alt::before { content: ""; }
+.bx.bxl-vimeo::before { content: ""; }
+.bx.bx-upvote::before { content: ""; }
+.bx.bx-downvote::before { content: ""; }
+.bx.bx-news::before { content: ""; }
+.bx.bx-pie-chart-alt::before { content: ""; }
+.bx.bx-images::before { content: ""; }
+.bx.bx-purchase-tag::before { content: ""; }
+.bx.bx-pen::before { content: ""; }
+.bx.bx-expand::before { content: ""; }
+.bx.bx-paperclip::before { content: ""; }
+.bx.bx-closet::before { content: ""; }
+.bx.bx-tv::before { content: ""; }
+.bx.bx-collection::before { content: ""; }
+.bx.bx-station::before { content: ""; }
+.bx.bx-wallet::before { content: ""; }
+.bx.bx-briefcase-alt::before { content: ""; }
+.bx.bx-hourglass::before { content: ""; }
+.bx.bx-carousel::before { content: ""; }
+.bx.bx-infinite::before { content: ""; }
+.bx.bx-plug::before { content: ""; }
+.bx.bx-notification-off::before { content: ""; }
+.bx.bx-window-close::before { content: ""; }
+.bx.bx-command::before { content: ""; }
+.bx.bx-grid-alt::before { content: ""; }
+.bx.bx-trash-alt::before { content: ""; }
+.bx.bx-chalkboard::before { content: ""; }
+.bx.bx-loader::before { content: ""; }
+.bx.bx-slider::before { content: ""; }
+.bx.bx-paper-plane::before { content: ""; }
+.bx.bx-selection::before { content: ""; }
+.bx.bxl-linkedin::before { content: ""; }
+.bx.bx-world::before { content: ""; }
+.bx.bx-dock-bottom::before { content: ""; }
+.bx.bx-dock-right::before { content: ""; }
+.bx.bx-dock-top::before { content: ""; }
+.bx.bx-dock-left::before { content: ""; }
+.bx.bx-layout::before { content: ""; }
+.bx.bxl-bitcoin::before { content: ""; }
+.bx.bxl-facebook-square::before { content: ""; }
+.bx.bx-alarm-off::before { content: ""; }
+.bx.bx-wrench::before { content: ""; }
+.bx.bx-loader-circle::before { content: ""; }
+.bx.bx-loader-alt::before { content: ""; }
+.bx.bx-car::before { content: ""; }
+.bx.bx-cart-alt::before { content: ""; }
+.bx.bxs-adjust::before { content: ""; }
+.bx.bxs-alarm::before { content: ""; }
+.bx.bxs-alarm-off::before { content: ""; }
+.bx.bxs-album::before { content: ""; }
+.bx.bxs-archive::before { content: ""; }
+.bx.bxs-camera::before { content: ""; }
+.bx.bxs-camera-off::before { content: ""; }
+.bx.bxs-folder::before { content: ""; }
+.bx.bxs-folder-plus::before { content: ""; }
+.bx.bxs-award::before { content: ""; }
+.bx.bxs-bar-chart-square::before { content: ""; }
+.bx.bxs-barcode::before { content: ""; }
+.bx.bxs-battery::before { content: ""; }
+.bx.bxs-battery-charging::before { content: ""; }
+.bx.bxs-battery-full::before { content: ""; }
+.bx.bxs-bell::before { content: ""; }
+.bx.bxs-bell-off::before { content: ""; }
+.bx.bxs-bolt::before { content: ""; }
+.bx.bxs-book::before { content: ""; }
+.bx.bxs-book-bookmark::before { content: ""; }
+.bx.bxs-bookmark::before { content: ""; }
+.bx.bxs-bookmark-plus::before { content: ""; }
+.bx.bxs-book-open::before { content: ""; }
+.bx.bxs-bookmark-star::before { content: ""; }
+.bx.bxs-briefcase::before { content: ""; }
+.bx.bxs-briefcase-alt::before { content: ""; }
+.bx.bxs-bug::before { content: ""; }
+.bx.bxs-building::before { content: ""; }
+.bx.bxs-bulb::before { content: ""; }
+.bx.bxs-buoy::before { content: ""; }
+.bx.bxs-calculator::before { content: ""; }
+.bx.bxs-captions::before { content: ""; }
+.bx.bxs-car::before { content: ""; }
+.bx.bxs-cart-alt::before { content: ""; }
+.bx.bxs-cart::before { content: ""; }
+.bx.bxs-chart::before { content: ""; }
+.bx.bxs-chip::before { content: ""; }
+.bx.bxs-cloud-download::before { content: ""; }
+.bx.bxs-cloud-upload::before { content: ""; }
+.bx.bxs-cloud::before { content: ""; }
+.bx.bxs-coffee::before { content: ""; }
+.bx.bxs-cog::before { content: ""; }
+.bx.bxs-collection::before { content: ""; }
+.bx.bxs-contact::before { content: ""; }
+.bx.bxs-copy::before { content: ""; }
+.bx.bxs-coupon::before { content: ""; }
+.bx.bxs-crown::before { content: ""; }
+.bx.bxs-cube::before { content: ""; }
+.bx.bxs-detail::before { content: ""; }
+.bx.bxs-discount::before { content: ""; }
+.bx.bxs-dislike::before { content: ""; }
+.bx.bxs-dock-bottom::before { content: ""; }
+.bx.bxs-dock-left::before { content: ""; }
+.bx.bxs-dock-right::before { content: ""; }
+.bx.bxs-dock-top::before { content: ""; }
+.bx.bxs-down-arrow-circle::before { content: ""; }
+.bx.bxs-download::before { content: ""; }
+.bx.bxs-downvote::before { content: ""; }
+.bx.bxs-drink::before { content: ""; }
+.bx.bxs-droplet::before { content: ""; }
+.bx.bxs-duplicate::before { content: ""; }
+.bx.bxs-eject::before { content: ""; }
+.bx.bxs-envelope::before { content: ""; }
+.bx.bxs-error-circle::before { content: ""; }
+.bx.bxs-error::before { content: ""; }
+.bx.bxs-file-image::before { content: ""; }
+.bx.bxs-file::before { content: ""; }
+.bx.bxs-filter-alt::before { content: ""; }
+.bx.bxs-first-aid::before { content: ""; }
+.bx.bxs-flag-alt::before { content: ""; }
+.bx.bxs-flag::before { content: ""; }
+.bx.bxs-gift::before { content: ""; }
+.bx.bxs-grid-alt::before { content: ""; }
+.bx.bxs-group::before { content: ""; }
+.bx.bxs-hdd::before { content: ""; }
+.bx.bxs-heart::before { content: ""; }
+.bx.bxs-hide::before { content: ""; }
+.bx.bxs-home::before { content: ""; }
+.bx.bxs-hot::before { content: ""; }
+.bx.bxs-hourglass::before { content: ""; }
+.bx.bxs-image::before { content: ""; }
+.bx.bxs-inbox::before { content: ""; }
+.bx.bxs-info-circle::before { content: ""; }
+.bx.bxs-joystick-alt::before { content: ""; }
+.bx.bxs-joystick::before { content: ""; }
+.bx.bxs-layer::before { content: ""; }
+.bx.bxs-left-arrow-circle::before { content: ""; }
+.bx.bxs-like::before { content: ""; }
+.bx.bxs-lock-open::before { content: ""; }
+.bx.bxs-lock::before { content: ""; }
+.bx.bxs-map-alt::before { content: ""; }
+.bx.bxs-map::before { content: ""; }
+.bx.bxs-message-rounded::before { content: ""; }
+.bx.bxs-message::before { content: ""; }
+.bx.bxs-microphone-off::before { content: ""; }
+.bx.bxs-microphone::before { content: ""; }
+.bx.bxs-minus-circle::before { content: ""; }
+.bx.bxs-moon::before { content: ""; }
+.bx.bxs-mouse::before { content: ""; }
+.bx.bxs-music::before { content: ""; }
+.bx.bxs-navigation::before { content: ""; }
+.bx.bxs-news::before { content: ""; }
+.bx.bxs-package::before { content: ""; }
+.bx.bxs-paper-plane::before { content: ""; }
+.bx.bxs-paste::before { content: ""; }
+.bx.bxs-pen::before { content: ""; }
+.bx.bxs-pencil::before { content: ""; }
+.bx.bxs-phone-call::before { content: ""; }
+.bx.bxs-phone-incoming::before { content: ""; }
+.bx.bxs-phone-outgoing::before { content: ""; }
+.bx.bxs-phone::before { content: ""; }
+.bx.bxs-pie-chart-alt::before { content: ""; }
+.bx.bxs-pie-chart::before { content: ""; }
+.bx.bxs-pin::before { content: ""; }
+.bx.bxs-playlist::before { content: ""; }
+.bx.bxs-plug::before { content: ""; }
+.bx.bxs-plus-circle::before { content: ""; }
+.bx.bxs-printer::before { content: ""; }
+.bx.bxs-purchase-tag::before { content: ""; }
+.bx.bxs-quote-left::before { content: ""; }
+.bx.bxs-quote-right::before { content: ""; }
+.bx.bxs-radio::before { content: ""; }
+.bx.bxs-rename::before { content: ""; }
+.bx.bxs-report::before { content: ""; }
+.bx.bxs-right-arrow-circle::before { content: ""; }
+.bx.bxs-ruler::before { content: ""; }
+.bx.bxs-save::before { content: ""; }
+.bx.bxs-sort-alt::before { content: ""; }
+.bx.bxs-select-multiple::before { content: ""; }
+.bx.bxs-send::before { content: ""; }
+.bx.bxs-server::before { content: ""; }
+.bx.bxs-share-alt::before { content: ""; }
+.bx.bxs-share::before { content: ""; }
+.bx.bxs-shield::before { content: ""; }
+.bx.bxs-shopping-bag-alt::before { content: ""; }
+.bx.bxs-shopping-bag::before { content: ""; }
+.bx.bxs-show::before { content: ""; }
+.bx.bx-happy::before { content: ""; }
+.bx.bx-meh::before { content: ""; }
+.bx.bx-sad::before { content: ""; }
+.bx.bxs-spreadsheet::before { content: ""; }
+.bx.bxs-star::before { content: ""; }
+.bx.bxs-store::before { content: ""; }
+.bx.bxs-sun::before { content: ""; }
+.bx.bxs-t-shirt::before { content: ""; }
+.bx.bxs-tag-x::before { content: ""; }
+.bx.bxs-tag::before { content: ""; }
+.bx.bxs-tennis-ball::before { content: ""; }
+.bx.bxs-terminal::before { content: ""; }
+.bx.bxs-to-top::before { content: ""; }
+.bx.bxs-toggle-left::before { content: ""; }
+.bx.bxs-toggle-right::before { content: ""; }
+.bx.bxs-torch::before { content: ""; }
+.bx.bxs-trash-alt::before { content: ""; }
+.bx.bxs-trash::before { content: ""; }
+.bx.bxs-trophy::before { content: ""; }
+.bx.bxs-truck::before { content: ""; }
+.bx.bxs-up-arrow-circle::before { content: ""; }
+.bx.bxs-upvote::before { content: ""; }
+.bx.bxs-user-circle::before { content: ""; }
+.bx.bxs-user-detail::before { content: ""; }
+.bx.bxs-user-minus::before { content: ""; }
+.bx.bxs-user-plus::before { content: ""; }
+.bx.bxs-user::before { content: ""; }
+.bx.bxs-video-off::before { content: ""; }
+.bx.bxs-video::before { content: ""; }
+.bx.bxs-videos::before { content: ""; }
+.bx.bxs-volume-full::before { content: ""; }
+.bx.bxs-volume-low::before { content: ""; }
+.bx.bxs-volume-mute::before { content: ""; }
+.bx.bxs-volume::before { content: ""; }
+.bx.bxs-wallet::before { content: ""; }
+.bx.bxs-watch-alt::before { content: ""; }
+.bx.bxs-watch::before { content: ""; }
+.bx.bxs-widget::before { content: ""; }
+.bx.bxs-wrench::before { content: ""; }
+.bx.bxs-x-circle::before { content: ""; }
+.bx.bxs-zap::before { content: ""; }
+.bx.bxs-folder-open::before { content: ""; }
+.bx.bxs-battery-low::before { content: ""; }
+.bx.bxs-conversation::before { content: ""; }
+.bx.bxs-dashboard::before { content: ""; }
+.bx.bxs-file-plus::before { content: ""; }
+.bx.bx-slider-alt::before { content: ""; }
+.bx.bxl-google-plus::before { content: ""; }
+.bx.bxl-google-plus-circle::before { content: ""; }
+.bx.bxl-linkedin-square::before { content: ""; }
+.bx.bxl-medium::before { content: ""; }
+.bx.bxl-medium-square::before { content: ""; }
+.bx.bxl-skype::before { content: ""; }
+.bx.bxl-slack-old::before { content: ""; }
+.bx.bxl-slack::before { content: ""; }
+.bx.bxl-twitch::before { content: ""; }
+.bx.bxl-discord::before { content: ""; }
+.bx.bxl-reddit::before { content: ""; }
+.bx.bxl-pinterest::before { content: ""; }
+.bx.bxl-blogger::before { content: ""; }
+.bx.bx-certification::before { content: ""; }
+.bx.bxs-certification::before { content: ""; }
+.bx.bx-rocket::before { content: ""; }
+.bx.bxs-rocket::before { content: ""; }
+.bx.bx-check-circle::before { content: ""; }
+.bx.bxs-check-circle::before { content: ""; }
+.bx.bxs-checkbox::before { content: ""; }
+.bx.bxs-checkbox-checked::before { content: ""; }
+.bx.bxs-star-half::before { content: ""; }
+.bx.bx-bus::before { content: ""; }
+.bx.bxs-bus::before { content: ""; }
+.bx.bx-check-double::before { content: ""; }
+.bx.bx-dumbbell::before { content: ""; }
+.bx.bx-bot::before { content: ""; }
+.bx.bx-area::before { content: ""; }
+.bx.bxs-bot::before { content: ""; }
+.bx.bxs-area::before { content: ""; }
+.bx.bx-bed::before { content: ""; }
+.bx.bxs-bed::before { content: ""; }
+.bx.bx-bath::before { content: ""; }
+.bx.bxs-bath::before { content: ""; }
+.bx.bx-train::before { content: ""; }
+.bx.bxs-train::before { content: ""; }
+.bx.bx-taxi::before { content: ""; }
+.bx.bxs-taxi::before { content: ""; }
+.bx.bx-movie::before { content: ""; }
+.bx.bxs-movie::before { content: ""; }
+.bx.bx-hotel::before { content: ""; }
+.bx.bx-planet::before { content: ""; }
+.bx.bxs-planet::before { content: ""; }
+.bx.bx-list-ol::before { content: ""; }
+.bx.bx-video-plus::before { content: ""; }
+.bx.bxs-video-plus::before { content: ""; }
+.bx.bx-menu-alt-left::before { content: ""; }
+.bx.bx-menu-alt-right::before { content: ""; }
+.bx.bx-box::before { content: ""; }
+.bx.bxs-box::before { content: ""; }
+.bx.bxs-key::before { content: ""; }
+.bx.bx-restaurant::before { content: ""; }
+.bx.bx-swim::before { content: ""; }
+.bx.bx-water::before { content: ""; }
+.bx.bx-wind::before { content: ""; }
+.bx.bx-dialpad::before { content: ""; }
+.bx.bx-handicap::before { content: ""; }
+.bx.bx-font-size::before { content: ""; }
+.bx.bx-code-block::before { content: ""; }
+.bx.bx-photo-album::before { content: ""; }
+.bx.bxs-photo-album::before { content: ""; }
+.bx.bxs-bell-ring::before { content: ""; }
+.bx.bxl-apple::before { content: ""; }
+.bx.bxl-android::before { content: ""; }
+.bx.bxl-play-store::before { content: ""; }
+.bx.bxl-windows::before { content: ""; }
+.bx.bxl-vk::before { content: ""; }
+.bx.bxl-pocket::before { content: ""; }
+.bx.bx-strikethrough::before { content: ""; }
+.bx.bx-file-blank::before { content: ""; }
+.bx.bxs-file-blank::before { content: ""; }
+.bx.bx-highlight::before { content: ""; }
+.bx.bx-font-color::before { content: ""; }
+.bx.bx-fingerprint::before { content: ""; }
+.bx.bx-transfer::before { content: ""; }
+.bx.bx-circle::before { content: ""; }
+.bx.bxs-edit::before { content: ""; }
+.bx.bx-ball::before { content: ""; }
+.bx.bxs-ball::before { content: ""; }
+.bx.bx-football::before { content: ""; }
+.bx.bxs-film::before { content: ""; }
+.bx.bx-dollar-circle::before { content: ""; }
+.bx.bxs-dollar-circle::before { content: ""; }
+.bx.bxs-skull::before { content: ""; }
+.bx.bxl-messenger::before { content: ""; }
+.bx.bx-search-alt::before { content: ""; }
+.bx.bxs-image-alt::before { content: ""; }
+.bx.bxs-microphone-alt::before { content: ""; }
+.bx.bx-analyse::before { content: ""; }
+.bx.bxs-x-square::before { content: ""; }
+.bx.bxs-plus-square::before { content: ""; }
+.bx.bxs-minus-square::before { content: ""; }
+.bx.bx-disc::before { content: ""; }
+.bx.bxs-disc::before { content: ""; }
+.bx.bx-equalizer::before { content: ""; }
+.bx.bx-stats::before { content: ""; }
+.bx.bx-move-horizontal::before { content: ""; }
+.bx.bx-move-vertical::before { content: ""; }
+.bx.bxs-flame::before { content: ""; }
+.bx.bx-grid-horizontal::before { content: ""; }
+.bx.bx-grid-vertical::before { content: ""; }
+.bx.bx-grid-small::before { content: ""; }
+.bx.bx-badge::before { content: ""; }
+.bx.bxs-badge::before { content: ""; }
+.bx.bx-id-card::before { content: ""; }
+.bx.bx-sort-up::before { content: ""; }
+.bx.bx-sort-down::before { content: ""; }
+.bx.bx-note::before { content: ""; }
+.bx.bxs-note::before { content: ""; }
+.bx.bx-test-tube::before { content: ""; }
+.bx.bx-help-circle::before { content: ""; }
+.bx.bxs-help-circle::before { content: ""; }
+.bx.bx-card::before { content: ""; }
+.bx.bxs-card::before { content: ""; }
+.bx.bx-rewind-circle::before { content: ""; }
+.bx.bx-magnet::before { content: ""; }
+.bx.bxs-magnet::before { content: ""; }
+.bx.bxl-500px::before { content: ""; }
+.bx.bxl-angular::before { content: ""; }
+.bx.bxl-codepen::before { content: ""; }
+.bx.bxl-creative-commons::before { content: ""; }
+.bx.bxl-digitalocean::before { content: ""; }
+.bx.bxl-deviantart::before { content: ""; }
+.bx.bxl-discourse::before { content: ""; }
+.bx.bxl-dropbox::before { content: ""; }
+.bx.bxl-drupal::before { content: ""; }
+.bx.bxl-ebay::before { content: ""; }
+.bx.bxl-amazon::before { content: ""; }
+.bx.bxl-digg::before { content: ""; }
+.bx.bxl-unsplash::before { content: ""; }
+.bx.bxl-wikipedia::before { content: ""; }
+.bx.bxl-sass::before { content: ""; }
+.bx.bxl-foursquare::before { content: ""; }
+.bx.bxl-invision::before { content: ""; }
+.bx.bxl-opera::before { content: ""; }
+.bx.bxl-airbnb::before { content: ""; }
+.bx.bxl-yelp::before { content: ""; }
+.bx.bxl-quora::before { content: ""; }
+.bx.bxl-git::before { content: ""; }
+.bx.bxl-html5::before { content: ""; }
+.bx.bxl-product-hunt::before { content: ""; }
+.bx.bxl-magento::before { content: ""; }
+.bx.bxl-stack-overflow::before { content: ""; }
+.bx.bxl-firefox::before { content: ""; }
+.bx.bxl-javascript::before { content: ""; }
+.bx.bxl-nodejs::before { content: ""; }
+.bx.bxl-kickstarter::before { content: ""; }
+.bx.bxl-vuejs::before { content: ""; }
+.bx.bxl-bing::before { content: ""; }
+.bx.bxl-react::before { content: ""; }
+.bx.bxl-periscope::before { content: ""; }
+.bx.bxl-wordpress::before { content: ""; }
+.bx.bxl-telegram::before { content: ""; }
+.bx.bxl-stripe::before { content: ""; }
+.bx.bxl-edge::before { content: ""; }
+.bx.bxl-paypal::before { content: ""; }
+.bx.bxl-internet-explorer::before { content: ""; }
+.bx.bxl-joomla::before { content: ""; }
+.bx.bxl-dailymotion::before { content: ""; }
+.bx.bxl-chrome::before { content: ""; }
+.bx.bxl-baidu::before { content: ""; }
+.bx.bxl-visa::before { content: ""; }
+.bx.bxl-mastercard::before { content: ""; }
+.bx.bxl-redux::before { content: ""; }
+.bx.bxl-bootstrap::before { content: ""; }
+.bx.bxl-yahoo::before { content: ""; }
+.bx.bxl-microsoft::before { content: ""; }
+.bx.bxl-css3::before { content: ""; }
+.bx.bxl-jsfiddle::before { content: ""; }
+.bx.bxl-shopify::before { content: ""; }
+.bx.bxl-flickr::before { content: ""; }
+.bx.bxl-less::before { content: ""; }
+.bx.bxl-snapchat::before { content: ""; }
+.bx.bxl-soundcloud::before { content: ""; }
+.bx.bxl-spotify::before { content: ""; }
+.bx.bxl-trello::before { content: ""; }
+.bx.bxl-wix::before { content: ""; }
+.bx.bxl-mailchimp::before { content: ""; }
+.bx.bxl-medium-old::before { content: ""; }
+.bx.bxl-squarespace::before { content: ""; }
+.bx.bxl-whatsapp-square::before { content: ""; }
+.bx.bxl-flickr-square::before { content: ""; }
+.bx.bxs-ambulance::before { content: ""; }
+.bx.bxs-left-arrow-square::before { content: ""; }
+.bx.bxs-up-arrow-square::before { content: ""; }
+.bx.bxs-down-arrow-square::before { content: ""; }
+.bx.bxs-right-arrow-square::before { content: ""; }
+.bx.bxs-user-badge::before { content: ""; }
+.bx.bx-calendar-event::before { content: ""; }
+.bx.bx-caret-left::before { content: ""; }
+.bx.bx-caret-up::before { content: ""; }
+.bx.bx-caret-right::before { content: ""; }
+.bx.bx-caret-down::before { content: ""; }
+.bx.bxs-gas-pump::before { content: ""; }
+.bx.bxs-landmark::before { content: ""; }
+.bx.bx-show-alt::before { content: ""; }
+.bx.bx-badge-check::before { content: ""; }
+.bx.bxs-badge-check::before { content: ""; }
+.bx.bx-rotate-left::before { content: ""; }
+.bx.bxs-coffee-alt::before { content: ""; }
+.bx.bx-brush::before { content: ""; }
+.bx.bxs-brush::before { content: ""; }
+.bx.bxs-keyboard::before { content: ""; }
+.bx.bxs-megaphone::before { content: ""; }
+.bx.bxs-directions::before { content: ""; }
+.bx.bxs-direction-right::before { content: ""; }
+.bx.bx-unlink::before { content: ""; }
+.bx.bx-paint::before { content: ""; }
+.bx.bx-joystick-button::before { content: ""; }
+.bx.bxs-joystick-button::before { content: ""; }
+.bx.bx-font-family::before { content: ""; }
+.bx.bxs-flask::before { content: ""; }
+.bx.bxs-capsule::before { content: ""; }
+.bx.bxs-color-fill::before { content: ""; }
+.bx.bxs-hotel::before { content: ""; }
+.bx.bxs-magic-wand::before { content: ""; }
+.bx.bx-repeat::before { content: ""; }
+.bx.bxs-eraser::before { content: ""; }
+.bx.bxs-cloud-rain::before { content: ""; }
+.bx.bxs-cloud-lightning::before { content: ""; }
+.bx.bxs-eyedropper::before { content: ""; }
+.bx.bxs-user-rectangle::before { content: ""; }
+.bx.bxs-plane::before { content: ""; }
+.bx.bxs-tree::before { content: ""; }
+.bx.bxs-factory::before { content: ""; }
+.bx.bxs-ship::before { content: ""; }
+.bx.bx-walk::before { content: ""; }
+.bx.bxs-yin-yang::before { content: ""; }
+.bx.bxs-file-pdf::before { content: ""; }
+.bx.bx-money::before { content: ""; }
+.bx.bx-home-circle::before { content: ""; }
+.bx.bxs-home-circle::before { content: ""; }
+.bx.bx-location-plus::before { content: ""; }
+.bx.bxs-location-plus::before { content: ""; }
+.bx.bx-arch::before { content: ""; }
+.bx.bxs-arch::before { content: ""; }
+.bx.bx-atom::before { content: ""; }
+.bx.bxs-badge-dollar::before { content: ""; }
+.bx.bx-baseball::before { content: ""; }
+.bx.bx-beer::before { content: ""; }
+.bx.bxs-beer::before { content: ""; }
+.bx.bx-bible::before { content: ""; }
+.bx.bxs-bible::before { content: ""; }
+.bx.bx-bomb::before { content: ""; }
+.bx.bxs-bomb::before { content: ""; }
+.bx.bx-bus-school::before { content: ""; }
+.bx.bxs-bus-school::before { content: ""; }
+.bx.bx-cabinet::before { content: ""; }
+.bx.bxs-cabinet::before { content: ""; }
+.bx.bx-calendar-edit::before { content: ""; }
+.bx.bxs-calendar-edit::before { content: ""; }
+.bx.bxs-car-wash::before { content: ""; }
+.bx.bxs-car-garage::before { content: ""; }
+.bx.bxs-car-mechanic::before { content: ""; }
+.bx.bxs-car-crash::before { content: ""; }
+.bx.bx-coffee-togo::before { content: ""; }
+.bx.bxs-coffee-togo::before { content: ""; }
+.bx.bxs-chess::before { content: ""; }
+.bx.bxs-dryer::before { content: ""; }
+.bx.bxs-washer::before { content: ""; }
+.bx.bx-pointer::before { content: ""; }
+.bx.bxs-pointer::before { content: ""; }
+.bx.bx-microchip::before { content: ""; }
+.bx.bxs-microchip::before { content: ""; }
+.bx.bxs-piano::before { content: ""; }
+.bx.bxs-file-export::before { content: ""; }
+.bx.bxs-file-import::before { content: ""; }
+.bx.bxs-flag-checkered::before { content: ""; }
+.bx.bx-heart-circle::before { content: ""; }
+.bx.bxs-heart-circle::before { content: ""; }
+.bx.bx-heart-square::before { content: ""; }
+.bx.bxs-heart-square::before { content: ""; }
+.bx.bx-home-heart::before { content: ""; }
+.bx.bxs-home-heart::before { content: ""; }
+.bx.bx-info-square::before { content: ""; }
+.bx.bxs-info-square::before { content: ""; }
+.bx.bx-layer-plus::before { content: ""; }
+.bx.bxs-layer-plus::before { content: ""; }
+.bx.bx-layer-minus::before { content: ""; }
+.bx.bxs-layer-minus::before { content: ""; }
+.bx.bx-recycle::before { content: ""; }
+.bx.bx-traffic-cone::before { content: ""; }
+.bx.bxs-traffic-cone::before { content: ""; }
+.bx.bx-wifi-2::before { content: ""; }
+.bx.bx-wifi-1::before { content: ""; }
+.bx.bx-wifi-0::before { content: ""; }
+.bx.bx-mask::before { content: ""; }
+.bx.bxs-mask::before { content: ""; }
+.bx.bx-low-vision::before { content: ""; }
+.bx.bxs-low-vision::before { content: ""; }
+.bx.bxs-radiation::before { content: ""; }
+.bx.bx-been-here::before { content: ""; }
+.bx.bxs-been-here::before { content: ""; }
+.bx.bx-current-location::before { content: ""; }
+.bx.bx-arrow-from-top::before { content: ""; }
+.bx.bxs-arrow-from-top::before { content: ""; }
+.bx.bx-arrow-from-bottom::before { content: ""; }
+.bx.bxs-arrow-from-bottom::before { content: ""; }
+.bx.bx-arrow-from-left::before { content: ""; }
+.bx.bxs-arrow-from-left::before { content: ""; }
+.bx.bx-arrow-from-right::before { content: ""; }
+.bx.bxs-arrow-from-right::before { content: ""; }
+.bx.bx-arrow-to-right::before { content: ""; }
+.bx.bxs-arrow-to-right::before { content: ""; }
+.bx.bx-arrow-to-left::before { content: ""; }
+.bx.bxs-arrow-to-left::before { content: ""; }
+.bx.bx-arrow-to-top::before { content: ""; }
+.bx.bxs-arrow-to-top::before { content: ""; }
+.bx.bx-arrow-to-bottom::before { content: ""; }
+.bx.bxs-arrow-to-bottom::before { content: ""; }
+.bx.bx-book-reader::before { content: ""; }
+.bx.bxs-book-reader::before { content: ""; }
+.bx.bxs-edit-location::before { content: ""; }
+.bx.bxs-ev-station::before { content: ""; }
+.bx.bxs-shapes::before { content: ""; }
+.bx.bxs-florist::before { content: ""; }
+.bx.bxs-pizza::before { content: ""; }
+.bx.bx-scan::before { content: ""; }
+.bx.bx-calendar-week::before { content: ""; }
+.bx.bxs-calendar-week::before { content: ""; }
+.bx.bx-glasses::before { content: ""; }
+.bx.bx-glasses-alt::before { content: ""; }
+.bx.bx-border-none::before { content: ""; }
+.bx.bx-border-inner::before { content: ""; }
+.bx.bx-dice-1::before { content: ""; }
+.bx.bxs-dice-1::before { content: ""; }
+.bx.bx-dice-2::before { content: ""; }
+.bx.bxs-dice-2::before { content: ""; }
+.bx.bx-dice-3::before { content: ""; }
+.bx.bxs-dice-3::before { content: ""; }
+.bx.bx-dice-4::before { content: ""; }
+.bx.bxs-dice-4::before { content: ""; }
+.bx.bx-dice-5::before { content: ""; }
+.bx.bxs-dice-5::before { content: ""; }
+.bx.bx-dice-6::before { content: ""; }
+.bx.bxs-dice-6::before { content: ""; }
+.bx.bx-webcam::before { content: ""; }
+.bx.bxs-webcam::before { content: ""; }
+.bx.bx-spray-can::before { content: ""; }
+.bx.bxs-spray-can::before { content: ""; }
+.bx.bxs-file-archive::before { content: ""; }
+.bx.bx-sticker::before { content: ""; }
+.bx.bxs-sticker::before { content: ""; }
+.bx.bx-tachometer::before { content: ""; }
+.bx.bxs-tachometer::before { content: ""; }
+.bx.bxs-thermometer::before { content: ""; }
+.bx.bx-game::before { content: ""; }
+.bx.bxs-game::before { content: ""; }
+.bx.bx-abacus::before { content: ""; }
+.bx.bx-alarm-snooze::before { content: ""; }
+.bx.bxs-alarm-snooze::before { content: ""; }
+.bx.bx-alarm-exclamation::before { content: ""; }
+.bx.bxs-alarm-exclamation::before { content: ""; }
+.bx.bxs-chevrons-left::before { content: ""; }
+.bx.bxs-chevrons-right::before { content: ""; }
+.bx.bxs-chevrons-up::before { content: ""; }
+.bx.bxs-chevrons-down::before { content: ""; }
+.bx.bxs-chevron-down::before { content: ""; }
+.bx.bxs-chevron-up::before { content: ""; }
+.bx.bxs-chevron-right::before { content: ""; }
+.bx.bxs-chevron-left::before { content: ""; }
+.bx.bxs-guitar-amp::before { content: ""; }
+.bx.bxs-up-arrow-alt::before { content: ""; }
+.bx.bxs-down-arrow-alt::before { content: ""; }
+.bx.bxs-left-arrow-alt::before { content: ""; }
+.bx.bxs-right-arrow-alt::before { content: ""; }
+.bx.bx-medal::before { content: ""; }
+.bx.bxs-medal::before { content: ""; }
+.bx.bxs-shopping-bags::before { content: ""; }
+.bx.bxs-baseball::before { content: ""; }
+.bx.bx-task-x::before { content: ""; }
+.bx.bxs-basketball::before { content: ""; }
+.bx.bx-barcode-reader::before { content: ""; }
+.bx.bx-blanket::before { content: ""; }
+.bx.bxs-blanket::before { content: ""; }
+.bx.bxs-binoculars::before { content: ""; }
+.bx.bx-bone::before { content: ""; }
+.bx.bxs-bone::before { content: ""; }
+.bx.bx-bong::before { content: ""; }
+.bx.bxs-bong::before { content: ""; }
+.bx.bx-book-alt::before { content: ""; }
+.bx.bxs-book-alt::before { content: ""; }
+.bx.bx-book-heart::before { content: ""; }
+.bx.bxs-book-heart::before { content: ""; }
+.bx.bx-book-add::before { content: ""; }
+.bx.bxs-book-add::before { content: ""; }
+.bx.bx-bracket::before { content: ""; }
+.bx.bx-brain::before { content: ""; }
+.bx.bxs-brain::before { content: ""; }
+.bx.bx-border-outer::before { content: ""; }
+.bx.bx-braille::before { content: ""; }
+.bx.bx-window-alt::before { content: ""; }
+.bx.bxs-window-alt::before { content: ""; }
+.bx.bx-calendar-heart::before { content: ""; }
+.bx.bxs-calendar-heart::before { content: ""; }
+.bx.bx-wine::before { content: ""; }
+.bx.bx-vial::before { content: ""; }
+.bx.bx-color-fill::before { content: ""; }
+.bx.bx-capsule::before { content: ""; }
+.bx.bx-eraser::before { content: ""; }
+.bx.bx-drink::before { content: ""; }
+.bx.bx-cctv::before { content: ""; }
+.bx.bxs-cctv::before { content: ""; }
+.bx.bx-chair::before { content: ""; }
+.bx.bx-network-chart::before { content: ""; }
+.bx.bxs-network-chart::before { content: ""; }
+.bx.bx-vector::before { content: ""; }
+.bx.bxs-vector::before { content: ""; }
+.bx.bx-calendar-exclamation::before { content: ""; }
+.bx.bxs-calendar-exclamation::before { content: ""; }
+.bx.bx-calendar-star::before { content: ""; }
+.bx.bxs-calendar-star::before { content: ""; }
+.bx.bx-camera-home::before { content: ""; }
+.bx.bxs-camera-home::before { content: ""; }
+.bx.bx-camera-movie::before { content: ""; }
+.bx.bxs-camera-movie::before { content: ""; }
+.bx.bxs-backpack::before { content: ""; }
+.bx.bxs-cart-download::before { content: ""; }
+.bx.bxs-cart-add::before { content: ""; }
+.bx.bxs-car-battery::before { content: ""; }
+.bx.bx-caret-right-circle::before { content: ""; }
+.bx.bx-caret-left-circle::before { content: ""; }
+.bx.bx-caret-up-circle::before { content: ""; }
+.bx.bx-caret-down-circle::before { content: ""; }
+.bx.bx-caret-right-square::before { content: ""; }
+.bx.bxs-caret-right-square::before { content: ""; }
+.bx.bx-caret-up-square::before { content: ""; }
+.bx.bxs-caret-up-square::before { content: ""; }
+.bx.bx-caret-left-square::before { content: ""; }
+.bx.bxs-caret-left-square::before { content: ""; }
+.bx.bx-caret-down-square::before { content: ""; }
+.bx.bxs-caret-down-square::before { content: ""; }
+.bx.bx-shield-x::before { content: ""; }
+.bx.bxs-shield-x::before { content: ""; }
+.bx.bx-line-chart-down::before { content: ""; }
+.bx.bx-chevron-down-circle::before { content: ""; }
+.bx.bxs-chevron-down-circle::before { content: ""; }
+.bx.bx-chevron-up-circle::before { content: ""; }
+.bx.bxs-chevron-up-circle::before { content: ""; }
+.bx.bx-chevron-left-circle::before { content: ""; }
+.bx.bxs-chevron-left-circle::before { content: ""; }
+.bx.bx-chevron-right-circle::before { content: ""; }
+.bx.bxs-chevron-right-circle::before { content: ""; }
+.bx.bx-chevron-down-square::before { content: ""; }
+.bx.bxs-chevron-down-square::before { content: ""; }
+.bx.bx-chevron-up-square::before { content: ""; }
+.bx.bxs-chevron-up-square::before { content: ""; }
+.bx.bx-chevron-left-square::before { content: ""; }
+.bx.bxs-chevron-left-square::before { content: ""; }
+.bx.bx-chevron-right-square::before { content: ""; }
+.bx.bxs-chevron-right-square::before { content: ""; }
+.bx.bx-church::before { content: ""; }
+.bx.bxs-church::before { content: ""; }
+.bx.bx-coin::before { content: ""; }
+.bx.bxs-coin::before { content: ""; }
+.bx.bx-coin-stack::before { content: ""; }
+.bx.bxs-coin-stack::before { content: ""; }
+.bx.bx-unite::before { content: ""; }
+.bx.bx-minus-front::before { content: ""; }
+.bx.bx-intersect::before { content: ""; }
+.bx.bx-exclude::before { content: ""; }
+.bx.bx-minus-back::before { content: ""; }
+.bx.bx-merge::before { content: ""; }
+.bx.bx-trim::before { content: ""; }
+.bx.bx-outline::before { content: ""; }
+.bx.bxs-bullseye::before { content: ""; }
+.bx.bx-meteor::before { content: ""; }
+.bx.bxs-meteor::before { content: ""; }
+.bx.bx-refresh::before { content: ""; }
+.bx.bx-home-smile::before { content: ""; }
+.bx.bxs-home-smile::before { content: ""; }
+.bx.bx-envelope-open::before { content: ""; }
+.bx.bxs-envelope-open::before { content: ""; }
+.bx.bxl-dev-to::before { content: ""; }
+.bx.bx-message-alt-add::before { content: ""; }
+.bx.bxs-message-alt-add::before { content: ""; }
+.bx.bx-message-alt-check::before { content: ""; }
+.bx.bxs-message-alt-check::before { content: ""; }
+.bx.bx-message-alt-error::before { content: ""; }
+.bx.bxs-message-alt-error::before { content: ""; }
+.bx.bx-message-alt-x::before { content: ""; }
+.bx.bxs-message-alt-x::before { content: ""; }
+.bx.bx-message-alt-minus::before { content: ""; }
+.bx.bxs-message-alt-minus::before { content: ""; }
+.bx.bx-message-alt-edit::before { content: ""; }
+.bx.bxs-message-alt-edit::before { content: ""; }
+.bx.bx-message-alt-detail::before { content: ""; }
+.bx.bxs-message-alt-detail::before { content: ""; }
+.bx.bx-message-rounded-check::before { content: ""; }
+.bx.bxs-message-rounded-check::before { content: ""; }
+.bx.bx-message-rounded-error::before { content: ""; }
+.bx.bxs-message-rounded-error::before { content: ""; }
+.bx.bx-message-rounded-x::before { content: ""; }
+.bx.bxs-message-rounded-x::before { content: ""; }
+.bx.bx-message-rounded-minus::before { content: ""; }
+.bx.bxs-message-rounded-minus::before { content: ""; }
+.bx.bx-message-rounded-edit::before { content: ""; }
+.bx.bxs-message-rounded-edit::before { content: ""; }
+.bx.bx-message-rounded-add::before { content: ""; }
+.bx.bxs-message-rounded-add::before { content: ""; }
+.bx.bx-message-rounded-detail::before { content: ""; }
+.bx.bxs-message-rounded-detail::before { content: ""; }
+.bx.bx-message-check::before { content: ""; }
+.bx.bxs-message-check::before { content: ""; }
+.bx.bx-message-error::before { content: ""; }
+.bx.bxs-message-error::before { content: ""; }
+.bx.bx-message-x::before { content: ""; }
+.bx.bxs-message-x::before { content: ""; }
+.bx.bx-message-minus::before { content: ""; }
+.bx.bxs-message-minus::before { content: ""; }
+.bx.bx-message-edit::before { content: ""; }
+.bx.bxs-message-edit::before { content: ""; }
+.bx.bx-message-add::before { content: ""; }
+.bx.bxs-message-add::before { content: ""; }
+.bx.bx-message-detail::before { content: ""; }
+.bx.bxs-message-detail::before { content: ""; }
+.bx.bx-message-square-check::before { content: ""; }
+.bx.bxs-message-square-check::before { content: ""; }
+.bx.bx-message-square-error::before { content: ""; }
+.bx.bxs-message-square-error::before { content: ""; }
+.bx.bx-message-square-x::before { content: ""; }
+.bx.bxs-message-square-x::before { content: ""; }
+.bx.bx-message-square-minus::before { content: ""; }
+.bx.bxs-message-square-minus::before { content: ""; }
+.bx.bx-message-square-edit::before { content: ""; }
+.bx.bxs-message-square-edit::before { content: ""; }
+.bx.bx-message-square-add::before { content: ""; }
+.bx.bxs-message-square-add::before { content: ""; }
+.bx.bx-message-square-detail::before { content: ""; }
+.bx.bxs-message-square-detail::before { content: ""; }
+.bx.bx-comment-check::before { content: ""; }
+.bx.bxs-comment-check::before { content: ""; }
+.bx.bx-comment-error::before { content: ""; }
+.bx.bx-comment-x::before { content: ""; }
+.bx.bxs-comment-x::before { content: ""; }
+.bx.bx-comment-edit::before { content: ""; }
+.bx.bxs-comment-edit::before { content: ""; }
+.bx.bx-comment-minus::before { content: ""; }
+.bx.bxs-comment-minus::before { content: ""; }
+.bx.bx-comment-add::before { content: ""; }
+.bx.bx-comment-detail::before { content: ""; }
+.bx.bx-cookie::before { content: ""; }
+.bx.bxs-cookie::before { content: ""; }
+.bx.bxs-copyright::before { content: ""; }
+.bx.bx-credit-card-front::before { content: ""; }
+.bx.bxs-credit-card-front::before { content: ""; }
+.bx.bxs-crop::before { content: ""; }
+.bx.bxs-diamond::before { content: ""; }
+.bx.bx-door-open::before { content: ""; }
+.bx.bxs-door-open::before { content: ""; }
+.bx.bx-donate-heart::before { content: ""; }
+.bx.bxs-donate-heart::before { content: ""; }
+.bx.bx-donate-blood::before { content: ""; }
+.bx.bxs-donate-blood::before { content: ""; }
+.bx.bx-shape-polygon::before { content: ""; }
+.bx.bxl-zoom::before { content: ""; }
+.bx.bxl-microsoft-teams::before { content: ""; }
+.bx.bxl-blender::before { content: ""; }
+.bx.bxl-kubernetes::before { content: ""; }
+.bx.bxl-google-cloud::before { content: ""; }
+.bx.bxl-django::before { content: ""; }
+.bx.bxl-spring-boot::before { content: ""; }
+.bx.bxl-tux::before { content: ""; }
+.bx.bxl-markdown::before { content: ""; }
+.bx.bxl-python::before { content: ""; }
+.bx.bxl-ok-ru::before { content: ""; }
+.bx.bxl-firebase::before { content: ""; }
+.bx.bxl-c-plus-plus::before { content: ""; }
+.bx.bx-bookmark-heart::before { content: ""; }
+.bx.bxs-bookmark-heart::before { content: ""; }
+.bx.bx-sort-alt-2::before { content: ""; }
+.bx.bx-category::before { content: ""; }
+.bx.bxs-category::before { content: ""; }
+.bx.bx-category-alt::before { content: ""; }
+.bx.bxs-category-alt::before { content: ""; }
+.bx.bx-bookmark-alt::before { content: ""; }
+.bx.bxs-bookmark-alt::before { content: ""; }
+.bx.bx-bookmark-alt-plus::before { content: ""; }
+.bx.bxs-bookmark-alt-plus::before { content: ""; }
+.bx.bx-bookmark-alt-minus::before { content: ""; }
+.bx.bxs-bookmark-alt-minus::before { content: ""; }
+.bx.bxs-face-mask::before { content: ""; }
+.bx.bxs-tv::before { content: ""; }
+.bx.bx-tag-alt::before { content: ""; }
+.bx.bxs-tag-alt::before { content: ""; }
+.bx.bx-movie-play::before { content: ""; }
+.bx.bxs-movie-play::before { content: ""; }
+.bx.bxs-user-account::before { content: ""; }
+.bx.bx-expand-alt::before { content: ""; }
+.bx.bx-library::before { content: ""; }
+.bx.bx-trip::before { content: ""; }
+.bx.bxs-virus::before { content: ""; }
+.bx.bxs-virus-block::before { content: ""; }
+.bx.bx-empty::before { content: ""; }
+        
+
+            @font-face {
+                font-family: 'text-editor-icons';
+                font-weight: normal;
+                font-style: normal;
+                src: url('../../../assets/icon-pack-cke.woff2') format('woff2');
+                ascent-override: 85%;
+                descent-override: 15%;
+                line-gap-override: 0%;
+            }
+
+            .cke {
+                font-family: 'text-editor-icons' !important;
+                font-weight: normal;
+                font-style: normal;
+                font-variant: normal;
+                line-height: 1;
+                text-rendering: auto;
+                display: inline-block;
+                text-transform: none;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            .cke.cke-ai::before { content: ""; }
+.cke.cke-ai-adjust-length::before { content: ""; }
+.cke.cke-ai-ask-ai::before { content: ""; }
+.cke.cke-ai-author::before { content: ""; }
+.cke.cke-ai-change-tone::before { content: ""; }
+.cke.cke-ai-chat::before { content: ""; }
+.cke.cke-ai-chat-commands::before { content: ""; }
+.cke.cke-ai-continue-writing::before { content: ""; }
+.cke.cke-ai-grammar-check::before { content: ""; }
+.cke.cke-ai-history::before { content: ""; }
+.cke.cke-ai-improve-writing::before { content: ""; }
+.cke.cke-ai-other::before { content: ""; }
+.cke.cke-ai-quick-actions::before { content: ""; }
+.cke.cke-ai-review::before { content: ""; }
+.cke.cke-ai-translate::before { content: ""; }
+.cke.cke-accessibility::before { content: ""; }
+.cke.cke-add-comment::before { content: ""; }
+.cke.cke-align-bottom::before { content: ""; }
+.cke.cke-align-center::before { content: ""; }
+.cke.cke-align-justify::before { content: ""; }
+.cke.cke-align-left::before { content: ""; }
+.cke.cke-align-middle::before { content: ""; }
+.cke.cke-align-right::before { content: ""; }
+.cke.cke-align-top::before { content: ""; }
+.cke.cke-arrow-down::before { content: ""; }
+.cke.cke-arrow-up::before { content: ""; }
+.cke.cke-bold::before { content: ""; }
+.cke.cke-bookmark::before { content: ""; }
+.cke.cke-bookmark-inline::before { content: ""; }
+.cke.cke-bookmark-medium::before { content: ""; }
+.cke.cke-bookmark-small::before { content: ""; }
+.cke.cke-box-with-check::before { content: ""; }
+.cke.cke-box-with-cross::before { content: ""; }
+.cke.cke-box-with-marker::before { content: ""; }
+.cke.cke-browse-files::before { content: ""; }
+.cke.cke-bulb::before { content: ""; }
+.cke.cke-bulleted-list::before { content: ""; }
+.cke.cke-cancel::before { content: ""; }
+.cke.cke-caption::before { content: ""; }
+.cke.cke-case-change::before { content: ""; }
+.cke.cke-check::before { content: ""; }
+.cke.cke-chevron-down::before { content: ""; }
+.cke.cke-chevron-right::before { content: ""; }
+.cke.cke-chevron-up::before { content: ""; }
+.cke.cke-ckbox-image-edit::before { content: ""; }
+.cke.cke-close::before { content: ""; }
+.cke.cke-code::before { content: ""; }
+.cke.cke-code-block::before { content: ""; }
+.cke.cke-cog::before { content: ""; }
+.cke.cke-color-palette::before { content: ""; }
+.cke.cke-color-tile-check::before { content: ""; }
+.cke.cke-comments-archive::before { content: ""; }
+.cke.cke-content-lock::before { content: ""; }
+.cke.cke-content-unlock::before { content: ""; }
+.cke.cke-copy::before { content: ""; }
+.cke.cke-document::before { content: ""; }
+.cke.cke-document-outline::before { content: ""; }
+.cke.cke-document-outline-toggle::before { content: ""; }
+.cke.cke-document-with-checkmark::before { content: ""; }
+.cke.cke-document-with-cross::before { content: ""; }
+.cke.cke-document-with-loupe::before { content: ""; }
+.cke.cke-drag-handle::before { content: ""; }
+.cke.cke-drag-indicator::before { content: ""; }
+.cke.cke-dropbox::before { content: ""; }
+.cke.cke-dropdown-arrow::before { content: ""; }
+.cke.cke-edit-comment::before { content: ""; }
+.cke.cke-emoji::before { content: ""; }
+.cke.cke-eraser::before { content: ""; }
+.cke.cke-error::before { content: ""; }
+.cke.cke-export-pdf::before { content: ""; }
+.cke.cke-export-word::before { content: ""; }
+.cke.cke-eye::before { content: ""; }
+.cke.cke-eye-crossed-out::before { content: ""; }
+.cke.cke-facebook::before { content: ""; }
+.cke.cke-file-upload::before { content: ""; }
+.cke.cke-find-replace::before { content: ""; }
+.cke.cke-font-background::before { content: ""; }
+.cke.cke-font-color::before { content: ""; }
+.cke.cke-font-family::before { content: ""; }
+.cke.cke-font-size::before { content: ""; }
+.cke.cke-footnote::before { content: ""; }
+.cke.cke-fullscreen-enter::before { content: ""; }
+.cke.cke-fullscreen-leave::before { content: ""; }
+.cke.cke-google-drive::before { content: ""; }
+.cke.cke-google-photos::before { content: ""; }
+.cke.cke-heading-1::before { content: ""; }
+.cke.cke-heading-2::before { content: ""; }
+.cke.cke-heading-3::before { content: ""; }
+.cke.cke-heading-4::before { content: ""; }
+.cke.cke-heading-5::before { content: ""; }
+.cke.cke-heading-6::before { content: ""; }
+.cke.cke-history::before { content: ""; }
+.cke.cke-horizontal-line::before { content: ""; }
+.cke.cke-html::before { content: ""; }
+.cke.cke-image::before { content: ""; }
+.cke.cke-image-asset-manager::before { content: ""; }
+.cke.cke-image-upload::before { content: ""; }
+.cke.cke-image-url::before { content: ""; }
+.cke.cke-import-export::before { content: ""; }
+.cke.cke-import-word::before { content: ""; }
+.cke.cke-indent::before { content: ""; }
+.cke.cke-info::before { content: ""; }
+.cke.cke-insert-merge-field::before { content: ""; }
+.cke.cke-italic::before { content: ""; }
+.cke.cke-legal-style-list::before { content: ""; }
+.cke.cke-line-height::before { content: ""; }
+.cke.cke-link::before { content: ""; }
+.cke.cke-list-style-circle::before { content: ""; }
+.cke.cke-list-style-decimal::before { content: ""; }
+.cke.cke-list-style-decimal-leading-zero::before { content: ""; }
+.cke.cke-list-style-disc::before { content: ""; }
+.cke.cke-list-style-lower-latin::before { content: ""; }
+.cke.cke-list-style-lower-roman::before { content: ""; }
+.cke.cke-list-style-square::before { content: ""; }
+.cke.cke-list-style-upper-latin::before { content: ""; }
+.cke.cke-list-style-upper-roman::before { content: ""; }
+.cke.cke-local::before { content: ""; }
+.cke.cke-loupe::before { content: ""; }
+.cke.cke-low-vision::before { content: ""; }
+.cke.cke-magic-wand::before { content: ""; }
+.cke.cke-marker::before { content: ""; }
+.cke.cke-maximize::before { content: ""; }
+.cke.cke-media::before { content: ""; }
+.cke.cke-media-placeholder::before { content: ""; }
+.cke.cke-minimize::before { content: ""; }
+.cke.cke-multi-level-list::before { content: ""; }
+.cke.cke-next-arrow::before { content: ""; }
+.cke.cke-notification::before { content: ""; }
+.cke.cke-numbered-list::before { content: ""; }
+.cke.cke-object-center::before { content: ""; }
+.cke.cke-object-full-width::before { content: ""; }
+.cke.cke-object-inline::before { content: ""; }
+.cke.cke-object-inline-left::before { content: ""; }
+.cke.cke-object-inline-right::before { content: ""; }
+.cke.cke-object-left::before { content: ""; }
+.cke.cke-object-right::before { content: ""; }
+.cke.cke-object-size-custom::before { content: ""; }
+.cke.cke-object-size-full::before { content: ""; }
+.cke.cke-object-size-large::before { content: ""; }
+.cke.cke-object-size-medium::before { content: ""; }
+.cke.cke-object-size-small::before { content: ""; }
+.cke.cke-one-drive::before { content: ""; }
+.cke.cke-outdated::before { content: ""; }
+.cke.cke-outdent::before { content: ""; }
+.cke.cke-page-break::before { content: ""; }
+.cke.cke-pagination-example::before { content: ""; }
+.cke.cke-paint-roller::before { content: ""; }
+.cke.cke-paint-roller-cursor-default::before { content: ""; }
+.cke.cke-paint-roller-cursor-text::before { content: ""; }
+.cke.cke-paper-clip::before { content: ""; }
+.cke.cke-paragraph::before { content: ""; }
+.cke.cke-pen::before { content: ""; }
+.cke.cke-pencil::before { content: ""; }
+.cke.cke-pilcrow::before { content: ""; }
+.cke.cke-pin::before { content: ""; }
+.cke.cke-play::before { content: ""; }
+.cke.cke-plus::before { content: ""; }
+.cke.cke-preview-merge-fields::before { content: ""; }
+.cke.cke-previous-arrow::before { content: ""; }
+.cke.cke-print::before { content: ""; }
+.cke.cke-project-logo::before { content: ""; }
+.cke.cke-quote::before { content: ""; }
+.cke.cke-redo::before { content: ""; }
+.cke.cke-refresh::before { content: ""; }
+.cke.cke-remove::before { content: ""; }
+.cke.cke-remove-comment::before { content: ""; }
+.cke.cke-remove-format::before { content: ""; }
+.cke.cke-return-arrow::before { content: ""; }
+.cke.cke-revision-history::before { content: ""; }
+.cke.cke-robot-pencil::before { content: ""; }
+.cke.cke-select-all::before { content: ""; }
+.cke.cke-selection::before { content: ""; }
+.cke.cke-settings::before { content: ""; }
+.cke.cke-show-blocks::before { content: ""; }
+.cke.cke-show-changes-off::before { content: ""; }
+.cke.cke-show-changes-on::before { content: ""; }
+.cke.cke-source::before { content: ""; }
+.cke.cke-sparkle::before { content: ""; }
+.cke.cke-special-characters::before { content: ""; }
+.cke.cke-stop::before { content: ""; }
+.cke.cke-strikethrough::before { content: ""; }
+.cke.cke-submit::before { content: ""; }
+.cke.cke-subscript::before { content: ""; }
+.cke.cke-superscript::before { content: ""; }
+.cke.cke-table::before { content: ""; }
+.cke.cke-table-cell-properties::before { content: ""; }
+.cke.cke-table-column::before { content: ""; }
+.cke.cke-table-layout::before { content: ""; }
+.cke.cke-table-merge-cell::before { content: ""; }
+.cke.cke-table-of-contents::before { content: ""; }
+.cke.cke-table-properties::before { content: ""; }
+.cke.cke-table-row::before { content: ""; }
+.cke.cke-template::before { content: ""; }
+.cke.cke-template-generic::before { content: ""; }
+.cke.cke-text::before { content: ""; }
+.cke.cke-text-alternative::before { content: ""; }
+.cke.cke-three-horizontal-dots::before { content: ""; }
+.cke.cke-three-stars::before { content: ""; }
+.cke.cke-three-vertical-dots::before { content: ""; }
+.cke.cke-thumb-down::before { content: ""; }
+.cke.cke-thumb-up::before { content: ""; }
+.cke.cke-todo-list::before { content: ""; }
+.cke.cke-track-changes::before { content: ""; }
+.cke.cke-track-changes-accept::before { content: ""; }
+.cke.cke-track-changes-discard::before { content: ""; }
+.cke.cke-underline::before { content: ""; }
+.cke.cke-undo::before { content: ""; }
+.cke.cke-unlink::before { content: ""; }
+.cke.cke-uploadcare-image-edit::before { content: ""; }
+.cke.cke-uploadcare-image-upload::before { content: ""; }
+.cke.cke-uploadcare-link::before { content: ""; }
+.cke.cke-user::before { content: ""; }
+.cke.cke-warning::before { content: ""; }
+.cke.cke-web::before { content: ""; }
+.cke.cke-trilium-admonition::before { content: ""; }
+.cke.cke-trilium-collapsible::before { content: ""; }
+.cke.cke-trilium-copy::before { content: ""; }
+.cke.cke-trilium-date-time::before { content: ""; }
+.cke.cke-trilium-download::before { content: ""; }
+.cke.cke-trilium-fileupload::before { content: ""; }
+.cke.cke-trilium-insert-footnote::before { content: ""; }
+.cke.cke-trilium-kbd::before { content: ""; }
+.cke.cke-trilium-link-preview::before { content: ""; }
+.cke.cke-trilium-markdown-mark::before { content: ""; }
+.cke.cke-trilium-math::before { content: ""; }
+.cke.cke-trilium-mermaid-info::before { content: ""; }
+.cke.cke-trilium-mermaid-insert::before { content: ""; }
+.cke.cke-trilium-mermaid-preview-mode::before { content: ""; }
+.cke.cke-trilium-mermaid-source-mode::before { content: ""; }
+.cke.cke-trilium-mermaid-split-mode::before { content: ""; }
+.cke.cke-trilium-note::before { content: ""; }
+.cke.cke-trilium-scissors::before { content: ""; }
+.cke.cke-trilium::before { content: ""; }
+.cke.cke-trilium-ai::before { content: ""; }
+.cke.cke-trilium-template::before { content: ""; }
+        
+
+.bx-rotate-90 { transform: rotate(90deg); }
+.bx-rotate-180 { transform: rotate(180deg); }
+.bx-rotate-270 { transform: rotate(270deg); }
+.bx-flip-horizontal { transform: scaleX(-1); }
+.bx-flip-vertical { transform: scaleY(-1); }
+
+[data-trilium-task-state="doing"], .tn-task-checkbox[data-trilium-task-state="doing"] {
+            --task-state-glyph: "";
+            --task-state-glyph-font-family: "boxicons";
+            --task-state-color: #e6a23c;
+            --task-state-hue: 36;
+        }
+[data-trilium-task-state="maybe"], .tn-task-checkbox[data-trilium-task-state="maybe"] {
+            --task-state-glyph: "";
+            --task-state-glyph-font-family: "boxicons";
+            --task-state-color: inherit;
+            --task-state-hue: unset;
+        }
+[data-trilium-task-state="cancelled"], .tn-task-checkbox[data-trilium-task-state="cancelled"] {
+            --task-state-glyph: "";
+            --task-state-glyph-font-family: "boxicons";
+            --task-state-color: #e64d4d;
+            --task-state-hue: 0;
+        }
+    </style>
+    
+</head>
+
+<body data-note-id="CszQzcBDhNCZ" class="type-text" data-ancestor-note-id="CrQ2mKf7zw7S">
+
+<div id="header">
+    <button aria-label="Toggle Navigation" id="left-pane-toggle-button" class="header-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg></button>
+    <a href="../../../" id="header-logo">
+            <img src="../../../icon-color.svg" width="32" height="24.150943396226417" alt="Logo" />
+        Chest
+    </a>
+    
+        <button aria-label="Toggle Table of Contents" id="toc-pane-toggle-button" class="header-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3 9h14V7H3v2zm0 4h14v-2H3v2zm0 4h14v-2H3v2zm16 0h2v-2h-2v2zm0-10V7h2v2h-2zm0 6h2v-2h-2v2z"></path></svg></button>
+    
+</div>
+<div id="split-pane">
+    <div id="left-pane">
+        <div id="navigation">
+            <div id="site-header">
+                <div class="theme-selection">
+                    <span id="sitetheme">Site Theme</span>
+                    <label class="switch">
+                      <input type="checkbox" aria-labelledby="sitetheme">
+                      <span class="slider"></span>
+                      <svg class="dark-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.742 13.045a8.088 8.088 0 0 1-2.077.271c-2.135 0-4.14-.83-5.646-2.336a8.025 8.025 0 0 1-2.064-7.723A1 1 0 0 0 9.73 2.034a10.014 10.014 0 0 0-4.489 2.582c-3.898 3.898-3.898 10.243 0 14.143a9.937 9.937 0 0 0 7.072 2.93 9.93 9.93 0 0 0 7.07-2.929 10.007 10.007 0 0 0 2.583-4.491 1.001 1.001 0 0 0-1.224-1.224zm-2.772 4.301a7.947 7.947 0 0 1-5.656 2.343 7.953 7.953 0 0 1-5.658-2.344c-3.118-3.119-3.118-8.195 0-11.314a7.923 7.923 0 0 1 2.06-1.483 10.027 10.027 0 0 0 2.89 7.848 9.972 9.972 0 0 0 7.848 2.891 8.036 8.036 0 0 1-1.484 2.059z"></path></svg>
+                      <svg class="light-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M6.993 12c0 2.761 2.246 5.007 5.007 5.007s5.007-2.246 5.007-5.007S14.761 6.993 12 6.993 6.993 9.239 6.993 12zM12 8.993c1.658 0 3.007 1.349 3.007 3.007S13.658 15.007 12 15.007 8.993 13.658 8.993 12 10.342 8.993 12 8.993zM10.998 19h2v3h-2zm0-17h2v3h-2zm-9 9h3v2h-3zm17 0h3v2h-3zM4.219 18.363l2.12-2.122 1.415 1.414-2.12 2.122zM16.24 6.344l2.122-2.122 1.414 1.414-2.122 2.122zM6.342 7.759 4.22 5.637l1.415-1.414 2.12 2.122zm13.434 10.605-1.414 1.414-2.122-2.122 1.414-1.414z"></path></svg>
+                    </label>
+                    <script>
+                        const el = document.querySelector(".theme-selection input");
+                        el.checked = (glob.theme === "dark");
+                    </script>
+                </div>
+                
+                    <div class="search-item">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
+                        <input type="text" class="search-input" placeholder="Search...">
+                    </div>
+                
+            </div>
+        
+            <nav id="menu">
+                
+
+    
+
+
+
+<ul>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Airway%20diseases.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-log-in-circle"></i> Airway diseases</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Airway%20diseases/1.1%20Bronchial%20Asthma.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-folder"></i> 1.1 Bronchial Asthma</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Airway%20diseases/1.1%20Bronchial%20Asthma/1.1.1%20Definition%20and%20Classification.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> 1.1.1 Definition and Classification</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Airway%20diseases/1.1%20Bronchial%20Asthma/1.1.2%20Pathophysiology%20and%20Pathology.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> 1.1.2 Pathophysiology and Pathology</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Airway%20diseases/1.1%20Bronchial%20Asthma/1.1.3%20Risk%20Factors.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> 1.1.3 Risk Factors</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Airway%20diseases/1.1%20Bronchial%20Asthma/1.1.4%20Clinical%20Presentation%20and%20Investigations.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> 1.1.4 Clinical Presentation and Investigations</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Airway%20diseases/1.1%20Bronchial%20Asthma/1.1.5%20Management%20of%20Chronic%20Asthma.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> 1.1.5 Management of Chronic Asthma</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Airway%20diseases/1.1%20Bronchial%20Asthma/1.1.6%20Acute%20Severe%20Asthma.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> 1.1.6 Acute Severe Asthma</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Airway%20diseases/1.1%20Bronchial%20Asthma/1.1.7%20Asthma%20in%20Brief%20and%20Viva%20Questions.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> 1.1.7 Asthma in Brief and Viva Questions</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Airway%20diseases/1.2%20COPD.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-folder"></i> 1.2 COPD</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Airway%20diseases/1.2%20COPD/1.2.1%20Definition%20and%20Risk%20Factors.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> 1.2.1 Definition and Risk Factors</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Airway%20diseases/1.2%20COPD/1.2.2%20Pathophysiology.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> 1.2.2 Pathophysiology</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Airway%20diseases/1.2%20COPD/1.2.3%20Chronic%20Bronchitis%20(Pathology).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> 1.2.3 Chronic Bronchitis (Pathology)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Airway%20diseases/1.2%20COPD/1.2.4%20Emphysema%20(Pathology).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> 1.2.4 Emphysema (Pathology)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Airway%20diseases/1.2%20COPD/1.2.5%20Clinical%20Features.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> 1.2.5 Clinical Features</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Airway%20diseases/1.2%20COPD/1.2.6%20Diagnosis%20and%20Assessment.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> 1.2.6 Diagnosis and Assessment</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Airway%20diseases/1.2%20COPD/1.2.7%20Management%20of%20COPD.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> 1.2.7 Management of COPD</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Airway%20diseases/1.2%20COPD/1.2.8%20Complications.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> 1.2.8 Complications</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Airway%20diseases/1.3%20Bronchiectasis.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-folder"></i> 1.3 Bronchiectasis</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Airway%20diseases/1.3%20Bronchiectasis/1.3.1%20Definition%20and%20Etiology.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> 1.3.1 Definition and Etiology</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Airway%20diseases/1.3%20Bronchiectasis/1.3.2%20Pathology.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> 1.3.2 Pathology</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Airway%20diseases/1.3%20Bronchiectasis/1.3.3%20Clinical%20Features%20and%20Investigations.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> 1.3.3 Clinical Features and Investigations</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Airway%20diseases/1.3%20Bronchiectasis/1.3.4%20Treatment%20and%20Complications.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> 1.3.4 Treatment and Complications</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Airway%20diseases/1.3%20Bronchiectasis/1.3.5%20Bronchiectasis%20in%20Brief%20and%20Viva%20Questions.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> 1.3.5 Bronchiectasis in Brief and Viva Questions</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Airway%20diseases/1.4%20Lung%20Abscess.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-folder"></i> 1.4 Lung Abscess</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Airway%20diseases/1.4%20Lung%20Abscess/1.4.1%20Definition%2C%20Pathophysiology%20and%20Presentation.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> 1.4.1 Definition, Pathophysiology and Presentation</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Airway%20diseases/1.4%20Lung%20Abscess/1.4.2%20Diagnosis%20and%20Investigations.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> 1.4.2 Diagnosis and Investigations</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Airway%20diseases/1.4%20Lung%20Abscess/1.4.3%20Management%20and%20Complications.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> 1.4.3 Management and Complications</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Interstitial%20Lung%20Diseases.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bxs-cookie"></i> Interstitial Lung Diseases</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Interstitial%20Lung%20Diseases/ILD%20Overview.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-folder"></i> ILD Overview</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Interstitial%20Lung%20Diseases/ILD%20Overview/Definition%20and%20Classification.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Definition and Classification</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Interstitial%20Lung%20Diseases/ILD%20Overview/Clinical%20Features%20and%20Investigations.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Clinical Features and Investigations</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Interstitial%20Lung%20Diseases/ILD%20Overview/Treatment%20and%20Complications.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Treatment and Complications</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Interstitial%20Lung%20Diseases/Sarcoidosis.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-folder"></i> Sarcoidosis</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Interstitial%20Lung%20Diseases/Sarcoidosis/Definition%2C%20Epidemiology%20and%20Immunopathology.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Definition, Epidemiology and Immunopathology</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Interstitial%20Lung%20Diseases/Sarcoidosis/Pathology.html">
+        
+        <span><i class="tn-icon bx bx-tone"></i> Pathology</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Interstitial%20Lung%20Diseases/Sarcoidosis/Clinical%20Features.html">
+        
+        <span><i class="tn-icon bx bx-shape-triangle"></i> Clinical Features</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Interstitial%20Lung%20Diseases/Sarcoidosis/Staging%20and%20Investigations.html">
+        
+        <span><i class="tn-icon bx bx-search-alt-2"></i> Staging and Investigations</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Interstitial%20Lung%20Diseases/Sarcoidosis/Treatment.html">
+        
+        <span><i class="tn-icon bx bxs-injection"></i> Treatment</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Interstitial%20Lung%20Diseases/2.2%20Hypersensitivity%20Pneumonitis.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> 2.2 Hypersensitivity Pneumonitis</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Interstitial%20Lung%20Diseases/2.3%20Pneumoconioses%20(Occupational%20Lung%20Diseases).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> 2.3 Pneumoconioses (Occupational Lung Diseases)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bxs-bug"></i> Pulmonary Infections</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-water"></i> Pneumonia</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Definition%2C%20Classification%20and%20Routes%20of%20Infection.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Definition, Classification and Routes of Infection</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Pathology%20of%20Pneumonia.html">
+        
+        <span><i class="tn-icon bx bx-tone"></i> Pathology of Pneumonia</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Typical%20Bacterial%20Pathogens%20(Pneumococcus%20and%20Haemophilus).html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-badge"></i> Typical Bacterial Pathogens (Pneumococcus and Haemophilus)</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Typical%20Bacterial%20Pathogens%20(Pneumococcus%20and%20Haemophilus)/Bacteria%20IDs.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-badge"></i> Bacteria IDs</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Typical%20Bacterial%20Pathogens%20(Pneumococcus%20and%20Haemophilus)/Bacteria%20IDs/Acinetobacter%20baumannii.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Acinetobacter baumannii</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Typical%20Bacterial%20Pathogens%20(Pneumococcus%20and%20Haemophilus)/Bacteria%20IDs/Chlamydia%20pneumoniae.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Chlamydia pneumoniae</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Typical%20Bacterial%20Pathogens%20(Pneumococcus%20and%20Haemophilus)/Bacteria%20IDs/Chlamydia%20psittaci.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Chlamydia psittaci</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Typical%20Bacterial%20Pathogens%20(Pneumococcus%20and%20Haemophilus)/Bacteria%20IDs/Haemophilus%20influenzae.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Haemophilus influenzae</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Typical%20Bacterial%20Pathogens%20(Pneumococcus%20and%20Haemophilus)/Bacteria%20IDs/Klebsiella%20pneumoniae.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Klebsiella pneumoniae</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Typical%20Bacterial%20Pathogens%20(Pneumococcus%20and%20Haemophilus)/Bacteria%20IDs/Legionella%20pneumophila.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Legionella pneumophila</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Typical%20Bacterial%20Pathogens%20(Pneumococcus%20and%20Haemophilus)/Bacteria%20IDs/Mycobacterium%20tuberculosis.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Mycobacterium tuberculosis</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Typical%20Bacterial%20Pathogens%20(Pneumococcus%20and%20Haemophilus)/Bacteria%20IDs/Mycoplasma%20pneumoniae.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Mycoplasma pneumoniae</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Typical%20Bacterial%20Pathogens%20(Pneumococcus%20and%20Haemophilus)/Bacteria%20IDs/Non-tuberculous%20mycobacteria%20(MOTT).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Non-tuberculous mycobacteria (MOTT)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Typical%20Bacterial%20Pathogens%20(Pneumococcus%20and%20Haemophilus)/Bacteria%20IDs/Pseudomonas%20aeruginosa.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Pseudomonas aeruginosa</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Typical%20Bacterial%20Pathogens%20(Pneumococcus%20and%20Haemophilus)/Bacteria%20IDs/Serratia%20marcescens.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Serratia marcescens</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Typical%20Bacterial%20Pathogens%20(Pneumococcus%20and%20Haemophilus)/Bacteria%20IDs/Streptococcus%20pneumoniae.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Streptococcus pneumoniae</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Atypical%20Pathogens%20(Mycoplasma%2C%20Legionella%2C%20Chlamydia).html">
+        
+        <span><i class="tn-icon bx bx-badge"></i> Atypical Pathogens (Mycoplasma, Legionella, Chlamydia)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Fungi.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bxl-netlify"></i> Fungi</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Fungi/Aspergillus.html">
+        
+        <span><i class="tn-icon bx bxl-netlify"></i> Aspergillus</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Viral%20Pneumonias%20(Influenza%2C%20Coronaviruses%2C%20COVID-19).html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bxs-virus"></i> Viral Pneumonias (Influenza, Coronaviruses, COVID-19)</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Viral%20Pneumonias%20(Influenza%2C%20Coronaviruses%2C%20COVID-19)/Viruses%20IDs.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bxs-virus"></i> Viruses IDs</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Viral%20Pneumonias%20(Influenza%2C%20Coronaviruses%2C%20COVID-19)/Viruses%20IDs/Adenovirus.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Adenovirus</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Viral%20Pneumonias%20(Influenza%2C%20Coronaviruses%2C%20COVID-19)/Viruses%20IDs/Coronaviruses%20(SARS-CoV%20and%20SARS-CoV-2).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Coronaviruses (SARS-CoV and SARS-CoV-2)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Viral%20Pneumonias%20(Influenza%2C%20Coronaviruses%2C%20COVID-19)/Viruses%20IDs/Influenza%20virus.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Influenza virus</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Viral%20Pneumonias%20(Influenza%2C%20Coronaviruses%2C%20COVID-19)/Viruses%20IDs/Respiratory%20syncytial%20virus%20(RSV).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Respiratory syncytial virus (RSV)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Microbe%20Shortcut.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-cut"></i> Microbe Shortcut</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Microbe%20Shortcut/Other%20Suspects%20(named%20only).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Other Suspects (named only)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Microbe%20Shortcut/Suspect%20Lineup%20(Classification).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Suspect Lineup (Classification)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Community-Acquired%20Pneumonia%20(CAP).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Community-Acquired Pneumonia (CAP)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Nosocomial%20Pneumonia.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Nosocomial Pneumonia</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pneumonia/Nosocomial%20Pathogens%20(Klebsiella%2C%20Serratia%2C%20Pseudomonas).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Nosocomial Pathogens (Klebsiella, Serratia, Pseudomonas)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pulmonary%20Tuberculosis.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-code-curly"></i> Pulmonary Tuberculosis</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pulmonary%20Tuberculosis/Epidemiology%20and%20Microbiology%20of%20M.%20tuberculosis.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Epidemiology and Microbiology of M. tuberculosis</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pulmonary%20Tuberculosis/Pathogenesis.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Pathogenesis</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pulmonary%20Tuberculosis/Laboratory%20Diagnosis.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Laboratory Diagnosis</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pulmonary%20Tuberculosis/Clinical%20Features%20and%20Investigations.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Clinical Features and Investigations</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pulmonary%20Tuberculosis/Management%20and%20Prevention.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Management and Prevention</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pulmonary%20Infections/Pulmonary%20Tuberculosis/Anti-TB%20Drugs.html">
+        
+        <span><i class="tn-icon bx bx-code-curly"></i> Anti-TB Drugs</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Tumours%20of%20the%20Lung.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bxs-invader"></i> Tumours of the Lung</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Tumours%20of%20the%20Lung/Bronchial%20Carcinoma.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-log-in-circle"></i> Bronchial Carcinoma</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Tumours%20of%20the%20Lung/Bronchial%20Carcinoma/Epidemiology%20and%20Etiology.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Epidemiology and Etiology</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Tumours%20of%20the%20Lung/Bronchial%20Carcinoma/Pathology%20and%20Histological%20Types.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Pathology and Histological Types</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Tumours%20of%20the%20Lung/Bronchial%20Carcinoma/Clinical%20Features.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Clinical Features</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Tumours%20of%20the%20Lung/Bronchial%20Carcinoma/Investigations%20and%20Treatment.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Investigations and Treatment</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Tumours%20of%20the%20Lung/Mesothelioma.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Mesothelioma</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Pleural%20Effusion.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bxs-balloon"></i> Pleural Effusion</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pleural%20Effusion/Clinical%20Picture%20and%20Radiology.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Clinical Picture and Radiology</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pleural%20Effusion/Diagnosis%20Transudate%20versus%20Exudate.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Diagnosis: Transudate versus Exudate</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Pleural%20Effusion/Chylothorax%20and%20Empyema.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Chylothorax and Empyema</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Respiratory%20Failure.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-trending-down"></i> Respiratory Failure</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Respiratory%20Failure/Definition%2C%20Causes%20and%20Types.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Definition, Causes and Types</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Respiratory%20Failure/Monitoring%2C%20Investigations%20and%20Treatment.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Monitoring, Investigations and Treatment</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Respiratory%20Failure/ARDS.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> ARDS</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Thoracic%20Surgery.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-knife"></i> Thoracic Surgery</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Thoracic%20Surgery/Fracture%20Ribs.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-folder"></i> Fracture Ribs</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Thoracic%20Surgery/Fracture%20Ribs/Aetiology%20and%20Simple%20Rib%20Fractures.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Aetiology and Simple Rib Fractures</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Thoracic%20Surgery/Fracture%20Ribs/Flail%20Chest.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Flail Chest</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Thoracic%20Surgery/Pneumothorax.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-folder"></i> Pneumothorax</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Thoracic%20Surgery/Pneumothorax/Aetiology%20and%20Closed%20(Simple)%20Pneumothorax.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Aetiology and Closed (Simple) Pneumothorax</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Thoracic%20Surgery/Pneumothorax/Open%20Pneumothorax%20(Sucking%20Chest%20Wound).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Open Pneumothorax (Sucking Chest Wound)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Thoracic%20Surgery/Pneumothorax/Tension%20Pneumothorax.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Tension Pneumothorax</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../../../Thoracic%20Surgery/Empyema%20of%20the%20Pleural%20Cavity.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-folder"></i> Empyema of the Pleural Cavity</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Thoracic%20Surgery/Empyema%20of%20the%20Pleural%20Cavity/Acute%20Empyema.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Acute Empyema</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Thoracic%20Surgery/Empyema%20of%20the%20Pleural%20Cavity/Chronic%20Empyema.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Chronic Empyema</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Thoracic%20Surgery/Principles%20of%20Chest%20Trauma.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Principles of Chest Trauma</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../../Thoracic%20Surgery/Hemothorax.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Hemothorax</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="submenu-item expanded">
+            
+
+    
+    <a class="type-book" href="../../../info.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bxs-info-circle"></i> info</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="submenu-item expanded">
+            
+
+    
+    <a class="type-text" href="../../Encyclopedia.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bxl-wikipedia"></i> Encyclopedia</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="submenu-item expanded">
+            
+
+    
+    <a class="type-text" href="../Diagnostic%20Tools.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-folder"></i> Diagnostic Tools</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Arterial%20blood%20gases%20(ABG).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Arterial blood gases (ABG)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Bacterial%20identification%20tests%20(Optochin%2C%20Bile%20solubility%2C%20Oxidase%2C%20Catalase%2C%20Indole).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Bacterial identification tests (Optochin, Bile solubility, Oxidase, Catalase, Indole)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Blood%20culture.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Blood culture</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Bronchial%20provocation%20test%20(Methacholine%20-%20Histamine).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Bronchial provocation test (Methacholine - Histamine)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Bronchoalveolar%20lavage%20(BAL).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Bronchoalveolar lavage (BAL)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Bronchoscopy.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Bronchoscopy</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Chest%20X-ray%20(CXR).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Chest X-ray (CXR)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Cold%20agglutinins.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Cold agglutinins</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="CT%20and%20High-resolution%20CT%20(HRCT).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> CT and High-resolution CT (HRCT)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Culture%20and%20sensitivity.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Culture and sensitivity</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="CURB-65%20severity%20score.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> CURB-65 severity score</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Cytology.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Cytology</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Direct%20fluorescent%20antibody%20-%20Immunofluorescence%20(DFA).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Direct fluorescent antibody - Immunofluorescence (DFA)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="ECG%20and%20Echocardiography.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> ECG and Echocardiography</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Gallium-67%20scan.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Gallium-67 scan</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Gas%20transfer%20-%20DLCO.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Gas transfer - DLCO</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Gram%20stain.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Gram stain</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="IGRA%20-%20QuantiFERON-Gold.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> IGRA - QuantiFERON-Gold</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Inflammatory%20markers%20(ESR%2C%20CRP%2C%20WBC).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Inflammatory markers (ESR, CRP, WBC)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Latex%20agglutination.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Latex agglutination</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Light's%20criteria.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Light&#39;s criteria</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Lung%20biopsy%20(transbronchial%2C%20CT-guided%2C%20surgical).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Lung biopsy (transbronchial, CT-guided, surgical)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="PCR%20(nucleic%20acid%20amplification).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> PCR (nucleic acid amplification)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Peak%20expiratory%20flow%20rate%20(PEFR).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Peak expiratory flow rate (PEFR)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Pleural%20aspiration%20(Thoracentesis).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Pleural aspiration (Thoracentesis)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Pulse%20oximetry%20(SpO2).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Pulse oximetry (SpO2)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Reversibility%20test%20(bronchodilator%20response).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Reversibility test (bronchodilator response)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Serology%20(Complement%20fixation%2C%20ELISA%2C%20haemagglutination%20inhibition).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Serology (Complement fixation, ELISA, haemagglutination inhibition)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Serum%20ACE.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Serum ACE</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Special%20culture%20media%20(Chocolate%20agar%2C%20BCYE%2C%20L-J%2C%20MacConkey%2C%20Blood%20agar).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Special culture media (Chocolate agar, BCYE, L-J, MacConkey, Blood agar)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Spirometry%20(FEV1%2C%20FVC%2C%20FEV1%20-FVC).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Spirometry (FEV1, FVC, FEV1 -FVC)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Sweat%20electrolytes%20test.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Sweat electrolytes test</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Thoracoscopy%20-%20VATS.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Thoracoscopy - VATS</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="TNM%20staging.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> TNM staging</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Tuberculin%20skin%20test%20(Mantoux).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Tuberculin skin test (Mantoux)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Ultrasound%20(chest%2C%20pleural).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Ultrasound (chest, pleural)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="Urinary%20antigen%20test%20(Antigenuria).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Urinary antigen test (Antigenuria)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item expanded">
+            
+
+    
+    <a class="type-text active" href="Ziehl-Neelsen%20(ZN)%20stain.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Ziehl-Neelsen (ZN) stain</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="%CE%B11-antitrypsin%20level%20and%20genotype.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> α1-antitrypsin level and genotype</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../Drugs.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-folder"></i> Drugs</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Amantadine%20and%20Rimantadine.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Amantadine and Rimantadine</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Aminoglycosides%20(Gentamicin%2C%20Streptomycin%2C%20Kanamycin%2C%20Amikacin%2C%20Viomycin).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Aminoglycosides (Gentamicin, Streptomycin, Kanamycin, Amikacin, Viomycin)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Analgesics%20(Paracetamol%2C%20NSAIDs%2C%20Intercostal%20block).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Analgesics (Paracetamol, NSAIDs, Intercostal block)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Anti-IgE%20and%20Anti-IL5%20(biologic%20therapy).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Anti-IgE and Anti-IL5 (biologic therapy)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Antimuscarinics%20-%20SAMA%20-%20LAMA%20(Ipratropium%2C%20Oxitropium%2C%20Tiotropium%2C%20Aclidinium%2C%20Glycopyrronium%2C%20Umeclidinium).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Antimuscarinics - SAMA - LAMA (Ipratropium, Oxitropium, Tiotropium, Aclidinium, Glycopyrronium, Umeclidinium)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/BCG%20vaccine.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> BCG vaccine</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Cephalosporins%20(Cefuroxime%2C%20Cefotaxime%2C%20Ceftriaxone%2C%20third-generation).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Cephalosporins (Cefuroxime, Cefotaxime, Ceftriaxone, third-generation)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Clindamycin%20and%20Metronidazole%20(anaerobic%20cover).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Clindamycin and Metronidazole (anaerobic cover)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Co-amoxiclav%20(Amoxicillin%20%2B%20Clavulanic%20acid).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Co-amoxiclav (Amoxicillin + Clavulanic acid)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/COVID-19%20vaccines%20(six%20categories).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> COVID-19 vaccines (six categories)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Diuretics%20and%20ACE%20inhibitors.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Diuretics and ACE inhibitors</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Ethambutol%20(E).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Ethambutol (E)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Fibrinolytics%20(intrapleural).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Fibrinolytics (intrapleural)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Fluoroquinolones%20(Levofloxacin%2C%20Moxifloxacin%2C%20Ciprofloxacin%2C%20Ofloxacin).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Fluoroquinolones (Levofloxacin, Moxifloxacin, Ciprofloxacin, Ofloxacin)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Hib%20conjugate%20vaccine%20(with%20DTP%20and%20Hepatitis%20B).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Hib conjugate vaccine (with DTP and Hepatitis B)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/ICS%20-%20Inhaled%20corticosteroids%20(Beclomethasone%2C%20Budesonide).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> ICS - Inhaled corticosteroids (Beclomethasone, Budesonide)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Imipenem%20(Carbapenem).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Imipenem (Carbapenem)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Influenza%20vaccines%20(inactivated%20and%20LAIV).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Influenza vaccines (inactivated and LAIV)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Isoniazid%20(INH).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Isoniazid (INH)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/LABA%20-%20Long-acting%20%CE%B22-agonists%20(Formoterol%2C%20Salmeterol%2C%20Indacaterol%2C%20Olodaterol%2C%20Vilanterol).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> LABA - Long-acting β2-agonists (Formoterol, Salmeterol, Indacaterol, Olodaterol, Vilanterol)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Leukotriene%20receptor%20antagonists%20(LTRA).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Leukotriene receptor antagonists (LTRA)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Macrolides%20(Erythromycin%2C%20Clarithromycin%2C%20Azithromycin).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Macrolides (Erythromycin, Clarithromycin, Azithromycin)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Methylxanthines%20(Theophylline%2C%20Aminophylline).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Methylxanthines (Theophylline, Aminophylline)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Mucolytics%20(N-acetylcysteine%2C%20Carbocysteine).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Mucolytics (N-acetylcysteine, Carbocysteine)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Neuraminidase%20inhibitors%20(Oseltamivir%2C%20Zanamivir).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Neuraminidase inhibitors (Oseltamivir, Zanamivir)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Oxygen%20therapy.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Oxygen therapy</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Penicillins%20(Penicillin%2C%20Benzylpenicillin%2C%20Amoxicillin%2C%20Ampicillin).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Penicillins (Penicillin, Benzylpenicillin, Amoxicillin, Ampicillin)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Pneumococcal%20vaccines%20(polysaccharide%20and%20conjugate).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Pneumococcal vaccines (polysaccharide and conjugate)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Pyrazinamide%20(Z).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Pyrazinamide (Z)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Ribavirin.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Ribavirin</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Rifampicin%20(Rifampin).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Rifampicin (Rifampin)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/SABA%20-%20Short-acting%20%CE%B22-agonists%20(Salbutamol%2C%20Terbutaline%2C%20Fenoterol).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> SABA - Short-acting β2-agonists (Salbutamol, Terbutaline, Fenoterol)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Second-line%20anti-TB%20drugs%20(Ethionamide%2C%20Cycloserine%2C%20PAS%2C%20Clofazimine).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Second-line anti-TB drugs (Ethionamide, Cycloserine, PAS, Clofazimine)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Sulfonamides.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Sulfonamides</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Systemic%20corticosteroids%20(Prednisolone%2C%20Hydrocortisone).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Systemic corticosteroids (Prednisolone, Hydrocortisone)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Tetracyclines.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Tetracyclines</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Drugs/Vancomycin.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Vancomycin</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-folder"></i> Symptoms and Signs</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Accessory%20muscles%20use%20-%20Intercostal%20recession.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Accessory muscles use - Intercostal recession</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Bronchial%20breathing.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Bronchial breathing</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Chest%20tightness.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Chest tightness</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Confusion%20-%20reduced%20consciousness.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Confusion - reduced consciousness</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Cough.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Cough</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Crackles%20(Crepitations%2C%20Rales).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Crackles (Crepitations, Rales)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Crepitus%20(bony).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Crepitus (bony)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Cyanosis.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Cyanosis</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Dullness%20on%20percussion.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Dullness on percussion</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Dysphagia.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Dysphagia</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Dyspnea%20(Breathlessness).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Dyspnea (Breathlessness)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Erythema%20nodosum.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Erythema nodosum</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Fever%20(Pyrexia).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Fever (Pyrexia)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Finger%20clubbing.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Finger clubbing</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Halitosis.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Halitosis</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Hemoptysis.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Hemoptysis</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Hoarseness%20and%20bovine%20cough.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Hoarseness and bovine cough</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Horner's%20syndrome.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Horner&#39;s syndrome</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Hyper-resonance.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Hyper-resonance</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Hypercapnia%20(CO2%20retention).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Hypercapnia (CO2 retention)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Hyperinflation%20(barrel%20chest).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Hyperinflation (barrel chest)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Hypotension%20and%20shock.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Hypotension and shock</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Hypoxemia%20and%20hypoxia.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Hypoxemia and hypoxia</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Lymphadenopathy.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Lymphadenopathy</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Malaise%20and%20fatigue.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Malaise and fatigue</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Night%20sweats.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Night sweats</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Pancoast's%20syndrome.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Pancoast&#39;s syndrome</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Paradoxical%20chest%20movement.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Paradoxical chest movement</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Pleuritic%20chest%20pain.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Pleuritic chest pain</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Pulsus%20paradoxus.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Pulsus paradoxus</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Pursed-lip%20breathing.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Pursed-lip breathing</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Reduced%20air%20entry%20(Silent%20chest).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Reduced air entry (Silent chest)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Signs%20of%20cor%20pulmonale.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Signs of cor pulmonale</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Sputum%20(Expectoration).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Sputum (Expectoration)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/SVC%20obstruction.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> SVC obstruction</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Tachycardia.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Tachycardia</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Tachypnea%20(fast%20breathing).html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Tachypnea (fast breathing)</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Tracheal%20deviation%20-%20Mediastinal%20shift.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Tracheal deviation - Mediastinal shift</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Vocal%20fremitus%20-%20Vocal%20resonance.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Vocal fremitus - Vocal resonance</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Weight%20loss.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Weight loss</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptoms%20and%20Signs/Wheeze.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Wheeze</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Color%20Legend.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Color Legend</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../Symptom%20Matrix.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Symptom Matrix</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="submenu-item">
+            
+
+    
+    <a class="type-book" href="../../images.html">
+        <button class="collapse-button" aria-label="Expand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></button>
+        <span><i class="tn-icon bx bx-image-alt"></i> images</span>
+    </a>
+
+
+
+
+<ul>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/ards-hyaline-membrane-pathogenesis.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> ards-hyaline-membrane-pathogenesis.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/asthma-gina-stepwise-treatment.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> asthma-gina-stepwise-treatment.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/asthma-normal-vs-asthmatic-airway.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> asthma-normal-vs-asthmatic-airway.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/asthma-pathogenesis-ige-cascade.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> asthma-pathogenesis-ige-cascade.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/asthma-pathogenesis-th1-th2.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> asthma-pathogenesis-th1-th2.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/asthma-symptom-control-assessment.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> asthma-symptom-control-assessment.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/bronchiectasis-types-varicose-cylindrical-saccular.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> bronchiectasis-types-varicose-cylindrical-saccular.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/cap-pathogens-table.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> cap-pathogens-table.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/cap-recommended-antibiotics-by-pathogen.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> cap-recommended-antibiotics-by-pathogen.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/chest-tube-insertion.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> chest-tube-insertion.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/chronic-bronchitis-reid-index.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> chronic-bronchitis-reid-index.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/chronic-empyema-ct.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> chronic-empyema-ct.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/copd-classification-by-cause.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> copd-classification-by-cause.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/copd-clinical-indicators.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> copd-clinical-indicators.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/copd-gold-stages-table.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> copd-gold-stages-table.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/copd-stepwise-management.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> copd-stepwise-management.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/coronavirus-structure.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> coronavirus-structure.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/emphysema-types-acinus.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> emphysema-types-acinus.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/flail-chest-paradoxical-movement.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> flail-chest-paradoxical-movement.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/flail-chest.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> flail-chest.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/hemo-pneumothorax-xray.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> hemo-pneumothorax-xray.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/hemothorax.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> hemothorax.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/hp-causes-table.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> hp-causes-table.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/ild-pulmonary-interstitium.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> ild-pulmonary-interstitium.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/influenza-virus-structure.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> influenza-virus-structure.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/legionella-cellular-pathogenesis.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> legionella-cellular-pathogenesis.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/mechanical-ventilation.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> mechanical-ventilation.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/micro-acinetobacter-gram-stain.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> micro-acinetobacter-gram-stain.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/micro-adenovirus.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> micro-adenovirus.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/micro-chlamydia-developmental-cycle.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> micro-chlamydia-developmental-cycle.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/micro-coronavirus-structure.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> micro-coronavirus-structure.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/micro-hinfluenzae-gram-stain.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> micro-hinfluenzae-gram-stain.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/micro-hinfluenzae-xv-factors-growth.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> micro-hinfluenzae-xv-factors-growth.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/micro-influenza-virus.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> micro-influenza-virus.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/micro-klebsiella-capsules.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> micro-klebsiella-capsules.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/micro-legionella-pathogenesis.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> micro-legionella-pathogenesis.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/micro-mtb-cell-wall.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> micro-mtb-cell-wall.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/micro-mtb-colonies-lj.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> micro-mtb-colonies-lj.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/micro-mtb-lj-medium.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> micro-mtb-lj-medium.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/micro-mtb-ziehl-neelsen.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> micro-mtb-ziehl-neelsen.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/micro-mycoplasma-chest-xray.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> micro-mycoplasma-chest-xray.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/micro-mycoplasma-fried-egg-colonies.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> micro-mycoplasma-fried-egg-colonies.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/micro-pseudomonas-gram-stain.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> micro-pseudomonas-gram-stain.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/micro-pseudomonas-green-pigment.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> micro-pseudomonas-green-pigment.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/micro-pseudomonas-hemolysis-blood-agar.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> micro-pseudomonas-hemolysis-blood-agar.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/micro-pseudomonas-macconkey.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> micro-pseudomonas-macconkey.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/micro-serratia-red-colonies.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> micro-serratia-red-colonies.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/micro-spneumoniae-alpha-hemolysis.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> micro-spneumoniae-alpha-hemolysis.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/micro-spneumoniae-gram-smear.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> micro-spneumoniae-gram-smear.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/micro-tb-primary-vs-postprimary.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> micro-tb-primary-vs-postprimary.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/micro-tuberculin-test.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> micro-tuberculin-test.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/mycobacterial-cell-wall.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> mycobacterial-cell-wall.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/open-pneumothorax-pathophysiology.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> open-pneumothorax-pathophysiology.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/peak-flow-meter-and-normal-values.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> peak-flow-meter-and-normal-values.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/pneumoconiosis-pathogenesis.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> pneumoconiosis-pathogenesis.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/rib-fixation-devices.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> rib-fixation-devices.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/rib-fractures.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> rib-fractures.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/sarcoidosis-cxr-ct-stage-1-2.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> sarcoidosis-cxr-ct-stage-1-2.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/sarcoidosis-cxr-ct-stage-3.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> sarcoidosis-cxr-ct-stage-3.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/sarcoidosis-granuloma-histology.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> sarcoidosis-granuloma-histology.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/spneumoniae-alpha-hemolytic-colonies.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> spneumoniae-alpha-hemolytic-colonies.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/spneumoniae-in-tissue.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> spneumoniae-in-tissue.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/sucking-chest-wound-first-aid.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> sucking-chest-wound-first-aid.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/tb-colonies-on-lj-medium.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> tb-colonies-on-lj-medium.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/tb-lj-medium.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> tb-lj-medium.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/tb-ziehl-neelsen-stain.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> tb-ziehl-neelsen-stain.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/tension-pneumothorax-pathophysiology.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> tension-pneumothorax-pathophysiology.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-image" href="../../images/tuberculin-test-mantoux.png">
+        
+        <span><i class="tn-icon bx bx-image"></i> tuberculin-test-mantoux.png</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../Chest.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> Chest</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+    
+        <li class="item">
+            
+
+    
+    <a class="type-text" href="../../References.html">
+        
+        <span><i class="tn-icon bx bx-note"></i> References</span>
+    </a>
+
+
+
+
+
+        </li>
+    
+</ul>
+
+
+        </li>
+    
+</ul>
+
+
+            </nav>
+           
+        </div>
+    </div>
+    <div id="right-pane">
+        <div id="main">
+            <div id="content" class="type-text ck-content">
+                
+                    <h1 id="title">Ziehl-Neelsen (ZN) stain</h1>
+                
+                    
+                    <h2><span style="background-color:hsl(210, 75%, 60%)"><strong>Ziehl-Neelsen (ZN) stain</strong></span><a id="ziehl-neelsen-zn-stain" class="toc-anchor" name="ziehl-neelsen-zn-stain" href="#ziehl-neelsen-zn-stain">#</a></h2>
+<p><em>صبغة زيل نلسن</em></p>
+<p><span style="background-color:hsl(30, 75%, 60%)"><strong>النوع (Type):</strong></span> أداة تشخيص (Diagnostic tool)</p>
+<h3><span style="background-color:hsl(210, 75%, 60%)"><strong>التعريف | Definition</strong></span><a id="التعريف-definition" class="toc-anchor" name="التعريف-definition" href="#التعريف-definition">#</a></h3>
+<p>صبغة خاصة تلون العصيات المقاومة للحمض باللون الأحمر على خلفية زرقاء (acid-fast stain).</p>
+<h3><span style="background-color:hsl(210, 75%, 60%)"><strong>ماذا يكشف وكيف يُفسَّر (What it shows)</strong></span><a id="ماذا-يكشف-وكيف-ي-فس-ر-what-it-shows" class="toc-anchor" name="ماذا-يكشف-وكيف-ي-فس-ر-what-it-shows" href="#ماذا-يكشف-وكيف-ي-فس-ر-what-it-shows">#</a></h3>
+<p>عصية السل تظهر كعصيات حمراء منحنية (mycolic acid في الجدار تمنع إزالة الصبغة). نتيجة موجبة تعني تشخيصا مبكرا ومتابعة العلاج.</p>
+<h3>يظهر في | Seen in (من ملاحظات الكتاب)<a id="يظهر-في-seen-in-من-ملاحظات-الكتاب" class="toc-anchor" name="يظهر-في-seen-in-من-ملاحظات-الكتاب" href="#يظهر-في-seen-in-من-ملاحظات-الكتاب">#</a></h3>
+<p><strong>Chapter 3: Pulmonary infections</strong></p>
+<ul>
+<li><a href="../../../Pulmonary%20Infections/Pulmonary%20Tuberculosis/Epidemiology%20and%20Microbiology%20of%20M.%20tuberculosis.html" class="type-text">3.2.1 Epidemiology and Microbiology of M. tuberculosis (3.2 Pulmonary Tuberculosis)</a>: Morphology: stained by Ziehl-Neelsen (ZN); acid-fast (resist decolourization with acid) because of mycolic acids in the cell wall. Thin, slightly …</li>
+<li><a href="../../../Pulmonary%20Infections/Pulmonary%20Tuberculosis/Laboratory%20Diagnosis.html" class="type-text">3.2.3 Laboratory Diagnosis (3.2 Pulmonary Tuberculosis)</a>: Rapid, simple, sensitive. ZN stain: AFB appear as pink curved bacilli on a blue background. A positive smear allows early diagnosis and follow-up of therapy.</li>
+<li><a href="../../../Pulmonary%20Infections/Pulmonary%20Tuberculosis/Clinical%20Features%20and%20Investigations.html" class="type-text">3.2.4 Clinical Features and Investigations (3.2 Pulmonary Tuberculosis)</a>: Sputum ZN stain and culture: required for definitive diagnosis, and for sensitivity and resistance testing. Bronchoscop…</li>
+</ul>
+<p><strong>Chapter 5: Pleural effusion</strong></p>
+<ul>
+<li><a href="../../../Pleural%20Effusion/Diagnosis%20Transudate%20versus%20Exudate.html" class="type-text">5.2 Diagnosis: Transudate versus Exudate</a>: Microbiology: sterile pot and blood culture bottles for Gram stain, culture, and AFB stain and culture.</li>
+</ul>
+<p><strong>Microbe Files (بطاقات الميكروبات)</strong></p>
+<ul>
+<li><a href="../../../Pulmonary%20Infections/Pneumonia/Typical%20Bacterial%20Pathogens%20(Pneumococcus%20and%20Haemophilus)/Bacteria%20IDs/Mycobacterium%20tuberculosis.html" class="type-text">Mycobacterium tuberculosis</a>: النوع (Type) بكتيريا عصوية مقاومة (resistance) للحمض والكحول (acid-alcohol fast)</li>
+</ul>
+                
+                
+            </div>
+
+            
+
+            <footer id="content-footer">
+                
+
+                
+                    
+
+<div class="navigation">
+    <a class="previous" href="Urinary%20antigen%20test%20(Antigenuria).html">Urinary antigen test (Antigenuria)</a>
+    <a class="next" href="%CE%B11-antitrypsin%20level%20and%20genotype.html">α1-antitrypsin level and genotype</a>
+</div>
+                
+
+                
+            </footer>
+        </div>
+        
+            <div id="toc-pane">
+                <h3>On This Page</h3>
+                <ul id="toc">
+                    
+                        
+
+<li>
+    <a href="#ziehl-neelsen-zn-stain">
+        <span>Ziehl-Neelsen (ZN) stain</span>
+    </a>
+
+    
+        <ul>
+            
+                
+
+<li>
+    <a href="#التعريف-definition">
+        <span>التعريف | Definition</span>
+    </a>
+
+    
+</li>
+
+            
+                
+
+<li>
+    <a href="#ماذا-يكشف-وكيف-ي-فس-ر-what-it-shows">
+        <span>ماذا يكشف وكيف يُفسَّر (What it shows)</span>
+    </a>
+
+    
+</li>
+
+            
+                
+
+<li>
+    <a href="#يظهر-في-seen-in-من-ملاحظات-الكتاب">
+        <span>يظهر في | Seen in (من ملاحظات الكتاب)</span>
+    </a>
+
+    
+</li>
+
+            
+        </ul>
+    
+</li>
+
+                    
+                </ul>
+            </div>
+        
+    </div>
+</div>
+
+</body>
+</html>
